@@ -21,7 +21,7 @@ jobs:
           key: jars-{{ checksum "build.gradle" }}-{{ checksum  "app/build.gradle" }}
       - run:
           name: Run Tests
-          command: ./gradlew testSandboxDebug
+          command: ./gradlew testDebug
       - store_test_results:
           path: app/build/test-results
       - deploy:
@@ -29,14 +29,13 @@ jobs:
           command: |
             if [ "${CIRCLE_BRANCH}" == "master" ]; then
               echo "Deploy to Crashlytics (sandbox)"
-              ./gradlew clean assembleSandboxDebug crashlyticsUploadDistributionSandboxDebug
+              ./gradlew clean assembleDebug crashlyticsUploadDistributionDebug
             elif [[ "${CIRCLE_BRANCH}" =~ ^release.*$ ]]; then
               echo "Deploy to Crashlytics (production)"
-              ./gradlew clean assembleProductionDebug crashlyticsUploadDistributionProductionDebug
-              ./gradlew clean assembleBeta crashlyticsUploadDistributionBeta
+              ./gradlew clean assembleRelease crashlyticsUploadDistributionRelease
             elif [[ "${CIRCLE_TAG}" =~ ^v[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
               echo "Deploy to Google Play"
-              ./gradlew clean assembleProductionRelease publishApkProductionRelease
+              ./gradlew clean assembleRelease publishApkRelease
             fi
       - store_artifacts:
           path: app/build/outputs
