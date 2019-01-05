@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/yellow_100</item>
+        <item name="colorPrimaryDark">@color/yellow_200</item>
+        <item name="colorAccent">@color/teal_A400</item>
+        <item name="colorControlHighlight">@color/yellow_100</item>
+        <item name="colorControlActivated">@color/teal_A400</item>
+        <item name="colorControlNormal">@color/grey_500</item>
+        <item name="android:windowBackground">@color/white_1000</item>
+        <item name="android:lineSpacingMultiplier">1.2</item>
+        <item name="android:textColor">@color/grey_900</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+    </style>
+
+</resources>
