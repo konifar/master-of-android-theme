@@ -1,0 +1,37 @@
+import dependencies.Depends
+
+buildscript {
+    repositories {
+        google()
+        jcenter()
+        maven { url 'https://maven.fabric.io/public' }
+        maven { url "https://plugins.gradle.org/m2/" }
+    }
+    dependencies {
+        classpath Depends.GradlePlugin.android
+        classpath Depends.GradlePlugin.kotlin
+        classpath Depends.GradlePlugin.fabric
+        classpath Depends.GradlePlugin.playServices
+
+        // ライブラリのライセンスページを生成してくれるプラグイン
+        classpath Depends.GradlePlugin.ossLicenses
+        // GooglePlayStoreへのアップロードをgradleで行えるようにするプラグイン
+        classpath Depends.GradlePlugin.playPublisher
+        // ライブラリのアップデートが可能かチェックできるプラグイン
+        classpath Depends.GradlePlugin.gradleVersions
+        // 未使用のリソースを一括削除できるプラグイン
+        classpath Depends.GradlePlugin.unusedResources
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter()
+        maven { url "https://jitpack.io" }
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
