@@ -51,13 +51,13 @@ object Depends {
         const val browser = "androidx.browser:browser:1.0.0"
 
         object DataBinding {
-            const val version = "3.2.1"
+            private const val version = "3.2.1"
             const val common = "androidx.databinding:databinding-common:$version"
             const val runtime = "androidx.databinding:databinding-runtime:$version"
         }
 
         object Lifecycle {
-            const val version = "2.0.0"
+            private const val version = "2.0.0"
             const val extensions = "androidx.lifecycle:lifecycle-extensions:$version"
             const val liveData = "androidx.lifecycle:lifecycle-livedata:$version"
         }
