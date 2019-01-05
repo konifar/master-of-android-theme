@@ -1,0 +1,108 @@
+import dependencies.Depends
+import dependencies.Versions
+
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'io.fabric'
+
+// To generate OSS License page
+apply plugin: 'com.google.android.gms.oss-licenses-plugin'
+// To upload apk to GooglePlayStore
+apply plugin: 'com.github.triplet.play'
+// To check the library version update
+apply plugin: 'com.github.ben-manes.versions'
+// To remove the unused resources
+apply plugin: "com.github.konifar.gradle.unused-resources-remover"
+
+apply from: "$rootDir/app/app-version.gradle"
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion Versions.androidCompileSdkVersion
+    dataBinding.enabled = true
+    defaultConfig {
+        applicationId "com.konifar.moat"
+        minSdkVersion Versions.androidMinSdkVersion
+        targetSdkVersion Versions.androidTargetSdkVersion
+        versionCode project.appVersionCode
+        versionName project.appVersionName
+
+        multiDexEnabled true
+    }
+
+    signingConfigs {
+        debug {
+            storeFile rootProject.file("debug.keystore")
+            storePassword "android"
+            keyAlias "androiddebugkey"
+            keyPassword "android"
+        }
+    }
+
+    buildTypes {
+        debug {
+            applicationIdSuffix '.debug'
+            debuggable true
+            signingConfig signingConfigs.debug
+            ext.alwaysUpdateBuildId = false
+        }
+        release {
+            // TODO Set release signingConfig
+            signingConfig signingConfigs.debug
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    kapt.mapDiagnosticLocations = true
+
+    // For faster dev build
+    aaptOptions.cruncherEnabled = false
+
+    // For CI
+    dexOptions {
+        if (System.getenv("CI") as boolean) {
+            javaMaxHeapSize "1024M"
+            maxProcessCount 1
+            threadCount 1
+            preDexLibraries false
+        }
+    }
+
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+        unitTests.all {
+            if (System.getenv("CI") as boolean) {
+                jvmArgs '-Xmx2048m', '-XX:+HeapDumpOnOutOfMemoryError'
+            }
+        }
+    }
+}
+
+dependencies {
+    implementation Depends.Kotlin.stdlib
+
+    // ==================== Google ====================
+    implementation Depends.AndroidX.appCompat
+    implementation Depends.Material.core
+    implementation Depends.AndroidX.constraint
+    implementation Depends.AndroidX.browser
+
+    implementation Depends.Gms.ossLicenses
+
+    // ==================== Debug ====================
+    implementation Depends.Timber.core
+    implementation(Depends.Fabric.crashlytics) { transitive = true }
+
+    // ==================== Test ====================
+    testImplementation Depends.Test.junit
+    androidTestImplementation Depends.Test.testRunner
+}

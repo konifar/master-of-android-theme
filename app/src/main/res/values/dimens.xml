@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Space -->
+    <dimen name="space_4dp">4dp</dimen>
+    <dimen name="space_8dp">8dp</dimen>
+    <dimen name="space_12dp">12dp</dimen>
+    <dimen name="space_16dp">16dp</dimen>
+    <dimen name="space_20dp">20dp</dimen>
+
+    <!-- Font -->
+    <dimen name="font_20sp">20sp</dimen>
+    <dimen name="font_16sp">16sp</dimen>
+    <dimen name="font_14sp">14sp</dimen>
+    <dimen name="font_12sp">12sp</dimen>
+
+    <!-- Border -->
+    <dimen name="border_1dp">1dp</dimen>
+
+    <!-- Icon -->
+    <dimen name="icon_48dp">48dp</dimen>
+
+    <!-- Button -->
+    <dimen name="button_radius">4dp</dimen>
+    <dimen name="button_border">1dp</dimen>
+
+    <!-- Toolbar -->
+    <dimen name="toolbar_elevation">4dp</dimen>
+
+    <!-- Tab -->
+    <dimen name="tab_indicator_height">2dp</dimen>
+    <dimen name="tab_indicator_height_none">0dp</dimen>
+
+</resources>

@@ -1,0 +1,14 @@
+def major = 1
+def minor = 0
+def patch = 0
+
+def versionCode = major * 10000 + minor * 100 + patch
+
+if ("true" == System.getenv("CI")) {
+    // For debug
+    versionCode = System.getenv("CIRCLE_BUILD_NUM") as Integer
+}
+println("version code: " + versionCode)
+
+project.ext.appVersionName = "$major.$minor.$patch"
+project.ext.appVersionCode = versionCode
