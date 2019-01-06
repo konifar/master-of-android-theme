@@ -3,4 +3,6 @@
     <string name="app_name">Master of Theme</string>
 
     <string name="components">Components</string>
+    <string name="components_toolbar_title">Toolbar title</string>
+    <string name="components_toolbar_subtitle">Toolbar subtitle</string>
 </resources>

@@ -16,6 +16,7 @@
     </style>
 
     <style name="AppNoActionBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="toolbarStyle">@style/Moat.Widget.AppCompat.Toolbar</item>
         <item name="colorPrimary">@color/yellow_100</item>
         <item name="colorPrimaryDark">@color/yellow_200</item>
         <item name="colorAccent">@color/teal_A400</item>
