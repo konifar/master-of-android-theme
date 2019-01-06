@@ -96,6 +96,8 @@ dependencies {
     implementation Depends.AndroidX.constraint
     implementation Depends.AndroidX.browser
 
+    implementation Depends.Material.core
+
     implementation Depends.Gms.ossLicenses
 
     // ==================== Debug ====================

@@ -143,7 +143,7 @@
     <color name="teal_800">#00695C</color>
     <color name="teal_900">#004D40</color>
     <color name="teal_A100">#A7FFEB</color>
-    <color name="teal_A200">#64FFDA</color>
+    <color name="teal_A200">#64ffda</color>
     <color name="teal_A400">#1DE9B6</color>
     <color name="teal_A700">#00BFA5</color>
 
