@@ -1,0 +1,91 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="vertical"
+            android:padding="@dimen/space_16dp">
+
+            <TextView
+                style="@style/LabelText"
+                android:text="No theme" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="@string/appcompat_buttons_button" />
+
+            <TextView
+                style="@style/LabelText"
+                android:layout_marginTop="@dimen/space_8dp"
+                android:text="Widget.AppCompat.Button" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="@string/appcompat_buttons_button" />
+
+            <TextView
+                style="@style/LabelText"
+                android:layout_marginTop="@dimen/space_8dp"
+                android:text="Widget.AppCompat.Button.Colored" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="@string/appcompat_buttons_button"
+                android:theme="@style/AppTheme.ButtonOverlay" />
+
+            <TextView
+                style="@style/LabelText"
+                android:layout_marginTop="@dimen/space_8dp"
+                android:text="Widget.AppCompat.Button.Small" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="@string/appcompat_buttons_button" />
+
+            <TextView
+                style="@style/LabelText"
+                android:layout_marginTop="@dimen/space_8dp"
+                android:text="Widget.AppCompat.Button.Borderless" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="@string/appcompat_buttons_button" />
+
+            <TextView
+                style="@style/LabelText"
+                android:layout_marginTop="@dimen/space_8dp"
+                android:text="Widget.AppCompat.Button.Borderless.Colored" />
+
+            <Button
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="@string/appcompat_buttons_button" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</layout>

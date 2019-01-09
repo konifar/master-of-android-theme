@@ -2,7 +2,13 @@
 <resources>
     <string name="app_name">Master of Theme</string>
 
+    <!-- AppCompat -->
+    <string name="appcompat_title">AppCompat</string>
+    <string name="appcompat_buttons">Buttons</string>
+    <string name="appcompat_buttons_button">Button</string>
+
     <string name="components">Components</string>
     <string name="components_toolbar_title">Toolbar title</string>
     <string name="components_toolbar_subtitle">Toolbar subtitle</string>
+
 </resources>

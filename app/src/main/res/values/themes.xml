@@ -1,18 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="AppTheme" parent="Theme.MaterialComponents.Light">
-        <item name="colorPrimary">@color/yellow_100</item>
-        <item name="colorPrimaryDark">@color/yellow_200</item>
-        <item name="colorAccent">@color/teal_A400</item>
-        <item name="colorControlHighlight">@color/yellow_100</item>
-        <item name="colorControlActivated">@color/teal_A400</item>
-        <item name="colorControlNormal">@color/grey_500</item>
-        <item name="android:windowBackground">@color/white_1000</item>
-        <item name="android:lineSpacingMultiplier">1.2</item>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/amber_400</item>
+        <item name="colorPrimaryDark">@color/amber_500</item>
+        <item name="colorAccent">@color/light_blue_A200</item>
+        <item name="android:windowBackground">@color/grey_50</item>
         <item name="android:textColor">@color/grey_900</item>
+        <item name="colorButtonNormal">@color/red_600</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
+    </style>
+
+    <style name="AppTheme.ButtonOverlay">
+        <item name="colorAccent">@color/red_600</item>
+        <item name="android:textColorPrimaryInverse">@color/white_1000</item>
     </style>
 
     <style name="AppNoActionBarTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
