@@ -5,6 +5,8 @@
     <!-- AppCompat -->
     <string name="appcompat_title">AppCompat</string>
     <string name="appcompat_buttons">Buttons</string>
+    <string name="appcompat_texts">Texts</string>
+    <string name="appcompat_components">Components</string>
     <string name="appcompat_buttons_button">Button</string>
 
     <string name="components">Components</string>

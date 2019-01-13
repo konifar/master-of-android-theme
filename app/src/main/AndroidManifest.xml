@@ -14,7 +14,7 @@
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme.AppCompat.Vivid">
 
         <meta-data
             android:name="io.fabric.ApiKey"

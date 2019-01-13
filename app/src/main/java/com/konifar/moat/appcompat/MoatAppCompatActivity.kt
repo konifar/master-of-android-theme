@@ -34,15 +34,8 @@ class MoatAppCompatActivity : AppCompatActivity() {
 
         private val tabs = arrayListOf(
             Tab.Buttons(),
-            Tab.Buttons(),
-            Tab.Buttons(),
-            Tab.Buttons(),
-            Tab.Buttons(),
-            Tab.Buttons(),
-            Tab.Buttons(),
-            Tab.Buttons(),
-            Tab.Buttons(),
-            Tab.Buttons()
+            Tab.Texts(),
+            Tab.Compoenents()
         )
 
         sealed class Tab(@StringRes val titleResId: Int) {
@@ -50,6 +43,14 @@ class MoatAppCompatActivity : AppCompatActivity() {
 
             class Buttons : Tab(R.string.appcompat_buttons) {
                 override val fragment = AppCompatButtonsFragment.newInstance()
+            }
+
+            class Texts : Tab(R.string.appcompat_texts) {
+                override val fragment = AppCompatTextsFragment.newInstance()
+            }
+
+            class Compoenents : Tab(R.string.appcompat_components) {
+                override val fragment = AppCompatComponentsFragment.newInstance()
             }
         }
 

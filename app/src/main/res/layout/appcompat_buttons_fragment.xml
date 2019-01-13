@@ -15,7 +15,7 @@
 
             <TextView
                 style="@style/LabelText"
-                android:text="No theme" />
+                android:text="Button" />
 
             <Button
                 android:layout_width="wrap_content"
@@ -25,64 +25,66 @@
 
             <TextView
                 style="@style/LabelText"
-                android:layout_marginTop="@dimen/space_8dp"
-                android:text="Widget.AppCompat.Button" />
+                android:text="Button(Disabled)" />
 
             <Button
-                style="@style/Widget.AppCompat.Button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/space_4dp"
+                android:enabled="false"
                 android:text="@string/appcompat_buttons_button" />
 
             <TextView
                 style="@style/LabelText"
-                android:layout_marginTop="@dimen/space_8dp"
-                android:text="Widget.AppCompat.Button.Colored" />
+                android:text="ToggleButton" />
 
-            <Button
-                style="@style/Widget.AppCompat.Button.Colored"
+            <ToggleButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/space_4dp"
-                android:text="@string/appcompat_buttons_button"
-                android:theme="@style/AppTheme.ButtonOverlay" />
+                android:text="ToggleButton" />
 
             <TextView
                 style="@style/LabelText"
-                android:layout_marginTop="@dimen/space_8dp"
-                android:text="Widget.AppCompat.Button.Small" />
+                android:text="Switch" />
 
-            <Button
-                style="@style/Widget.AppCompat.Button.Small"
+            <Switch
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/space_4dp"
-                android:text="@string/appcompat_buttons_button" />
+                android:switchPadding="@dimen/space_4dp"
+                android:text="Switch" />
 
             <TextView
                 style="@style/LabelText"
-                android:layout_marginTop="@dimen/space_8dp"
-                android:text="Widget.AppCompat.Button.Borderless" />
+                android:text="CheckBox" />
 
-            <Button
-                style="@style/Widget.AppCompat.Button.Borderless"
+            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/space_4dp"
-                android:text="@string/appcompat_buttons_button" />
+                android:text="CheckBox" />
 
             <TextView
                 style="@style/LabelText"
-                android:layout_marginTop="@dimen/space_8dp"
-                android:text="Widget.AppCompat.Button.Borderless.Colored" />
+                android:text="CheckBox(Disabled)" />
 
-            <Button
-                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            <CheckBox
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/space_4dp"
-                android:text="@string/appcompat_buttons_button" />
+                android:enabled="false"
+                android:text="CheckBox" />
+
+            <TextView
+                style="@style/LabelText"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="RadioButton" />
 
         </LinearLayout>
 

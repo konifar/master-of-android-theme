@@ -1,0 +1,91 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        tools:ignore="HardcodedText">
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    android:orientation="vertical"
+                    android:padding="@dimen/space_16dp">
+
+                <TextView
+                        style="@style/LabelText"
+                        android:text="CardView"/>
+
+                <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_4dp">
+
+                    <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:padding="@dimen/space_16dp"
+                            android:text="CardView"/>
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                        style="@style/LabelText"
+                        android:text="FloatingActionButton"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/space_4dp"
+                        android:src="@drawable/ic_close_24dp"/>
+
+                <TextView
+                        style="@style/LabelText"
+                        android:text="AlertDialog"/>
+
+                <Button
+                        android:id="@+id/alert_dialog"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="AlertDialog"/>
+
+                <TextView
+                        style="@style/LabelText"
+                        android:text="BottomSheet"/>
+
+                <Button
+                        android:id="@+id/bottom_sheet"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="BottomSheet"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/bottom_sheet_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="16dp"
+                    app:layout_behavior="@string/bottom_sheet_behavior">
+
+                <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="BottomSheet"/>
+            </LinearLayout>
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </ScrollView>
+
+</layout>
