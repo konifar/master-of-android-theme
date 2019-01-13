@@ -38,24 +38,29 @@
             android:paddingBottom="@dimen/space_8dp"
             app:layout_constraintBottom_toBottomOf="parent">
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/cat_one"
-                style="@style/ThemeImage"
-                android:src="@drawable/img_cat_one" />
+            <LinearLayout
+                android:id="@+id/theme_icons"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/cat_two"
-                style="@style/ThemeImage"
-                android:layout_marginStart="@dimen/space_12dp"
-                android:src="@drawable/img_cat_two"
-                app:layout_constraintStart_toEndOf="@+id/cat_one" />
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/cat_one"
+                    style="@style/ThemeImage"
+                    android:src="@drawable/img_cat_one" />
 
-            <com.makeramen.roundedimageview.RoundedImageView
-                android:id="@+id/cat_colorful"
-                style="@style/ThemeImage"
-                android:layout_marginStart="@dimen/space_12dp"
-                android:src="@drawable/img_cat_colorful"
-                app:layout_constraintStart_toEndOf="@+id/cat_two" />
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/cat_two"
+                    style="@style/ThemeImage"
+                    android:layout_marginStart="@dimen/space_12dp"
+                    android:src="@drawable/img_cat_two" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/cat_colorful"
+                    style="@style/ThemeImage"
+                    android:layout_marginStart="@dimen/space_12dp"
+                    android:src="@drawable/img_cat_colorful" />
+
+            </LinearLayout>
 
             <View
                 android:id="@+id/separator"
@@ -63,7 +68,7 @@
                 android:layout_height="0dp"
                 android:layout_marginStart="@dimen/space_16dp"
                 app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toEndOf="@+id/cat_colorful"
+                app:layout_constraintStart_toEndOf="@+id/theme_icons"
                 app:layout_constraintTop_toTopOf="parent" />
 
             <Switch
