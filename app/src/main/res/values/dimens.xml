@@ -7,6 +7,8 @@
     <dimen name="space_12dp">12dp</dimen>
     <dimen name="space_16dp">16dp</dimen>
     <dimen name="space_20dp">20dp</dimen>
+    <dimen name="space_minus_8dp">-8dp</dimen>
+    <dimen name="space_minus_16dp">-16dp</dimen>
 
     <!-- Font -->
     <dimen name="font_20sp">20sp</dimen>
@@ -16,9 +18,12 @@
 
     <!-- Border -->
     <dimen name="border_1dp">1dp</dimen>
+    <dimen name="border_4dp">4dp</dimen>
 
     <!-- Icon -->
     <dimen name="icon_48dp">48dp</dimen>
+    <dimen name="icon_56dp">56dp</dimen>
+    <dimen name="icon_radius">8dp</dimen>
 
     <!-- Button -->
     <dimen name="button_radius">4dp</dimen>

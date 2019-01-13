@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText"
+    tools:showIn="@layout/appcompat_examples_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="all"
+            android:padding="@dimen/space_16dp"
+            android:text="GitHub Repository https://github.com/konifar/master-of-theme" />
+
+        <View style="@style/Border" />
+
+        <CheckedTextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="@drawable/ic_check_24dp_selector"
+            android:checked="true"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_16dp"
+            android:text="CheckedTextView" />
+
+        <View style="@style/Border" />
+
+        <CheckedTextView
+            style="@style/TextAppearance.AppCompat.Body1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:checkMark="@drawable/ic_check_24dp_selector"
+            android:enabled="false"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_16dp"
+            android:text="CheckedTextView (Disabled)" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <item name="colorPrimary">@color/amber_400</item>
-        <item name="colorPrimaryDark">@color/amber_500</item>
-        <item name="colorBackgroundFloating">@color/red_600</item>
-        <item name="colorButtonNormal">@color/red_600</item>
-        <item name="colorControlActivated">@color/purple_500</item>
-        <item name="colorControlNormal">@color/blue_500</item>
-        <item name="colorError">@color/pink_600</item>
-        <item name="colorSwitchThumbNormal">@color/amber_800</item>
-        <item name="actionMenuTextColor">@color/green_200</item>
-        <item name="editTextColor">@color/light_blue_700</item>
-        <item name="tooltipForegroundColor">@color/grey_500</item>
-        <item name="textColorAlertDialogListItem">@color/black_1000</item>
-        <item name="textColorSearchUrl">@color/black_1000</item>
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/blue_grey_300</item>
+        <item name="colorPrimaryDark">@color/blue_grey_400</item>
+        <item name="colorAccent">@color/green_A200</item>
+        <item name="colorError">@color/red_500</item>
+        <item name="colorSwitchThumbNormal">@color/grey_500</item>
+        <item name="android:textColor">@color/blue_grey_900</item>
         <item name="android:textColorSecondary">@color/black_1000</item>
-        <item name="colorAccent">@color/light_blue_A200</item>
-        <item name="android:windowBackground">@color/grey_50</item>
-        <item name="android:textColor">@color/yellow_900</item>
-        <item name="android:textColorHint">@color/grey_900</item>
+        <item name="android:windowBackground">@color/blue_grey_50</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>
         <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
+    </style>
+
+    <style name="Moat.Widget.Design.TabLayout" parent="Widget.Design.TabLayout">
+        <item name="elevation">4dp</item>
+        <item name="android:background">?attr/colorPrimary</item>
+        <item name="tabTextColor">?android:textColorTertiary</item>
+    </style>
+
+    <style name="Moat.Widget.AppCompat.ActionBar.Solid" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="elevation">0dp</item>
     </style>
 
     <item name="disabled_alpha" format="float" type="dimen">1.0</item>

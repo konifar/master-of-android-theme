@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText"
+    tools:showIn="@layout/appcompat_examples_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/space_16dp">
+
+        <!-- EditText -->
+        <LinearLayout
+            style="@style/ContainerRow"
+            android:layout_marginTop="@dimen/space_minus_8dp">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="EditText (Empty)" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hint"
+                    android:inputType="text" />
+            </LinearLayout>
+
+            <Space style="@style/Space8dp" />
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="EditText (Filled)" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Hint"
+                    android:inputType="text"
+                    android:text="Filled" />
+            </LinearLayout>
+
+            <Space style="@style/Space8dp" />
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="EditText (Disabled)" />
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:enabled="false"
+                    android:hint="Hint"
+                    android:inputType="text"
+                    android:text="Filled" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/Border"
+            android:layout_marginTop="@dimen/space_16dp"
+            android:layout_marginBottom="@dimen/space_16dp" />
+
+        <!-- TextInputLayout -->
+        <LinearLayout
+            style="@style/ContainerRow"
+            android:layout_marginTop="@dimen/space_minus_8dp">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="EditText (Empty)" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Hint"
+                        android:inputType="text" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <Space style="@style/Space8dp" />
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="EditText (Filled)" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Hint"
+                        android:inputType="text"
+                        android:text="Filled" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            style="@style/Border"
+            android:layout_marginTop="@dimen/space_16dp"
+            android:layout_marginBottom="@dimen/space_16dp" />
+
+        <!-- TextInputLayout -->
+        <LinearLayout
+            style="@style/ContainerRow"
+            android:layout_marginTop="@dimen/space_minus_8dp">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="EditText (Error)" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/text_input_layout_error"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Hint"
+                        android:inputType="text"
+                        android:text="Filled" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <Space style="@style/Space8dp" />
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="EditText (Disabled)" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:enabled="false"
+                        android:hint="Hint"
+                        android:inputType="text"
+                        android:text="Filled" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

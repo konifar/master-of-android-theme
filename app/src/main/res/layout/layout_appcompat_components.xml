@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/space_16dp">
+
+        <LinearLayout
+            style="@style/ContainerRow"
+            android:layout_marginTop="@dimen/space_minus_8dp">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="ProgressBar" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="RatingBar" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:rating="3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="SeekBar" />
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:max="100"
+                    android:progress="30" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="FloatingActionButton" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_8dp"
+                    android:src="@drawable/ic_check_24dp_white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="BottomNavigationView" />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    app:menu="@menu/bottom_navigation_menu" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
