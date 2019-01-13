@@ -90,11 +90,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun changeDarkMode(darkMode: Boolean) {
-        if (darkMode) {
-            delegate.setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-        } else {
-            delegate.setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-        }
+        Handler().postDelayed({
+            if (darkMode) {
+                delegate.setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+            } else {
+                delegate.setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+            }
+        }, 200)
     }
 
     private fun restart() {
