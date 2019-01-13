@@ -10,15 +10,71 @@
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/border"
             app:layout_constraintTop_toBottomOf="@+id/tab_layout" />
 
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toTopOf="parent"
-            app:tabMode="scrollable" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/border"
+            style="@style/Border"
+            app:layout_constraintBottom_toTopOf="@+id/footer" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/footer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:paddingStart="@dimen/space_16dp"
+            android:paddingTop="@dimen/space_8dp"
+            android:paddingEnd="@dimen/space_16dp"
+            android:paddingBottom="@dimen/space_8dp"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/cat_one"
+                style="@style/ThemeImage"
+                android:src="@drawable/img_cat_one" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/cat_two"
+                style="@style/ThemeImage"
+                android:layout_marginStart="@dimen/space_12dp"
+                android:src="@drawable/img_cat_two"
+                app:layout_constraintStart_toEndOf="@+id/cat_one" />
+
+            <com.makeramen.roundedimageview.RoundedImageView
+                android:id="@+id/cat_colorful"
+                style="@style/ThemeImage"
+                android:layout_marginStart="@dimen/space_12dp"
+                android:src="@drawable/img_cat_colorful"
+                app:layout_constraintStart_toEndOf="@+id/cat_two" />
+
+            <View
+                android:id="@+id/separator"
+                style="@style/Border.Vertical"
+                android:layout_height="0dp"
+                android:layout_marginStart="@dimen/space_16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cat_colorful"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Switch
+                android:id="@+id/dark_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/space_16dp"
+                android:switchPadding="@dimen/space_8dp"
+                android:text="@string/dark_mode"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/separator"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

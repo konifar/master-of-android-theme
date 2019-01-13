@@ -16,9 +16,12 @@
 
     <!-- Border -->
     <dimen name="border_1dp">1dp</dimen>
+    <dimen name="border_2dp">2dp</dimen>
 
     <!-- Icon -->
     <dimen name="icon_48dp">48dp</dimen>
+    <dimen name="icon_56dp">56dp</dimen>
+    <dimen name="icon_radius">8dp</dimen>
 
     <!-- Button -->
     <dimen name="button_radius">4dp</dimen>

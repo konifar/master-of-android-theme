@@ -1,4 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?><!-- Specific styles for app -->
 <resources>
 
+    <style name="Border">
+        <item name="android:layout_height">@dimen/border_1dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/border_grey</item>
+    </style>
+
+    <style name="Border.Vertical">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">@dimen/border_1dp</item>
+    </style>
+
+    <style name="ThemeImage">
+        <item name="android:background">@drawable/selector_theme_cat</item>
+        <item name="android:layout_width">@dimen/icon_56dp</item>
+        <item name="android:layout_height">@dimen/icon_56dp</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:clickable">true</item>
+        <item name="android:foreground">?attr/selectableItemBackground</item>
+        <item name="riv_corner_radius">@dimen/icon_radius</item>
+    </style>
+
 </resources>

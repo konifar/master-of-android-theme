@@ -98,4 +98,12 @@ object Depends {
         const val core = "com.jakewharton.timber:timber:4.7.1"
     }
 
+
+    /* ========================================
+     * UI
+     * ========================================*/
+
+    object Ui {
+        const val roundedimageview = "com.makeramen:roundedimageview:2.3.0"
+    }
 }
