@@ -102,7 +102,7 @@ class MainActivity : AppCompatActivity() {
             finish()
             startActivity(Intent(this, MainActivity::class.java))
             overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-        }, 300)
+        }, 200)
     }
 
     private fun clearTheme() {

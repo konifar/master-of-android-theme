@@ -78,6 +78,7 @@
                 android:layout_marginStart="@dimen/space_16dp"
                 android:switchPadding="@dimen/space_8dp"
                 android:text="@string/dark_mode"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/separator"
                 app:layout_constraintTop_toTopOf="parent" />
