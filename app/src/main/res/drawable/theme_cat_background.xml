@@ -6,12 +6,12 @@
             <item android:state_selected="true">
                 <shape android:shape="rectangle">
                     <padding
-                        android:bottom="@dimen/border_2dp"
-                        android:left="@dimen/border_2dp"
-                        android:right="@dimen/border_2dp"
-                        android:top="@dimen/border_2dp" />
+                        android:bottom="@dimen/border_4dp"
+                        android:left="@dimen/border_4dp"
+                        android:right="@dimen/border_4dp"
+                        android:top="@dimen/border_4dp" />
                     <stroke
-                        android:width="@dimen/border_2dp"
+                        android:width="@dimen/border_4dp"
                         android:color="?attr/colorPrimary" />
                     <corners android:radius="@dimen/icon_radius" />
                     <solid android:color="@color/grey_100" />
@@ -20,12 +20,12 @@
             <item android:state_selected="false">
                 <shape android:shape="rectangle">
                     <padding
-                        android:bottom="@dimen/border_2dp"
-                        android:left="@dimen/border_2dp"
-                        android:right="@dimen/border_2dp"
-                        android:top="@dimen/border_2dp" />
+                        android:bottom="@dimen/border_4dp"
+                        android:left="@dimen/border_4dp"
+                        android:right="@dimen/border_4dp"
+                        android:top="@dimen/border_4dp" />
                     <stroke
-                        android:width="@dimen/border_1dp"
+                        android:width="@dimen/border_4dp"
                         android:color="@color/grey_200" />
                     <corners android:radius="@dimen/icon_radius" />
                     <solid android:color="@color/grey_100" />

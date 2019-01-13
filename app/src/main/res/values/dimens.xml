@@ -16,7 +16,7 @@
 
     <!-- Border -->
     <dimen name="border_1dp">1dp</dimen>
-    <dimen name="border_2dp">2dp</dimen>
+    <dimen name="border_4dp">4dp</dimen>
 
     <!-- Icon -->
     <dimen name="icon_48dp">48dp</dimen>

@@ -13,12 +13,12 @@
     </style>
 
     <style name="ThemeImage">
-        <item name="android:background">@drawable/selector_theme_cat</item>
+        <item name="android:foreground">@drawable/theme_cat_foreground</item>
+        <item name="android:background">@drawable/theme_cat_background</item>
         <item name="android:layout_width">@dimen/icon_56dp</item>
         <item name="android:layout_height">@dimen/icon_56dp</item>
         <item name="android:scaleType">centerCrop</item>
         <item name="android:clickable">true</item>
-        <item name="android:foreground">?attr/selectableItemBackground</item>
         <item name="riv_corner_radius">@dimen/icon_radius</item>
     </style>
 

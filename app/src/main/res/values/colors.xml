@@ -3,4 +3,6 @@
 
     <color name="border_grey">@color/grey_200</color>
 
+    <color name="ripple">#1F000000</color>
+
 </resources>

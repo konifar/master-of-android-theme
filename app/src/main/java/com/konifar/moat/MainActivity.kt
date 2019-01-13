@@ -20,6 +20,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         setUpTabs()
+
+        binding.catOne.isSelected = true
     }
 
     private fun setUpTabs() {
