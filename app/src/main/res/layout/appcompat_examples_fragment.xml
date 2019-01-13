@@ -12,89 +12,25 @@
             android:layout_height="wrap_content"
             android:clipToPadding="false"
             android:orientation="vertical"
-            android:padding="@dimen/space_8dp">
+            android:padding="@dimen/space_16dp">
 
             <!--==================== Colors ====================-->
             <TextView
                 style="@style/Title"
+                android:layout_marginTop="0dp"
                 android:text="@string/colors" />
 
             <include layout="@layout/layout_appcompat_colors" />
 
             <include layout="@layout/layout_appcompat_texts" />
 
+
+            <!--==================== Buttons ====================-->
             <TextView
-                style="@style/LabelText"
-                android:text="Button" />
+                style="@style/Title"
+                android:text="@string/buttons" />
 
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_4dp"
-                android:text="@string/appcompat_buttons_button" />
-
-            <TextView
-                style="@style/LabelText"
-                android:text="Button(Disabled)" />
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_4dp"
-                android:enabled="false"
-                android:text="@string/appcompat_buttons_button" />
-
-            <TextView
-                style="@style/LabelText"
-                android:text="ToggleButton" />
-
-            <ToggleButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_4dp"
-                android:text="ToggleButton" />
-
-            <TextView
-                style="@style/LabelText"
-                android:text="Switch" />
-
-            <Switch
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_4dp"
-                android:switchPadding="@dimen/space_4dp"
-                android:text="Switch" />
-
-            <TextView
-                style="@style/LabelText"
-                android:text="CheckBox" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_4dp"
-                android:text="CheckBox" />
-
-            <TextView
-                style="@style/LabelText"
-                android:text="CheckBox(Disabled)" />
-
-            <CheckBox
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_4dp"
-                android:enabled="false"
-                android:text="CheckBox" />
-
-            <TextView
-                style="@style/LabelText"
-                android:text="RadioButton" />
-
-            <RadioButton
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_4dp"
-                android:text="RadioButton" />
+            <include layout="@layout/layout_appcompat_buttons" />
 
             <TextView
                 style="@style/LabelText"
