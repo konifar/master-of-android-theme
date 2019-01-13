@@ -10,6 +10,7 @@
     <string name="texts">Texts</string>
     <string name="forms">Forms</string>
     <string name="actions">Actions</string>
+    <string name="components">Components</string>
 
     <string name="dark_mode">Dark mode</string>
 
@@ -19,7 +20,6 @@
     <string name="appcompat_components">Components</string>
     <string name="appcompat_buttons_button">Button</string>
 
-    <string name="components">Components</string>
     <string name="components_toolbar_title">Toolbar title</string>
     <string name="components_toolbar_subtitle">Toolbar subtitle</string>
 

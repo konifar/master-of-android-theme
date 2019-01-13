@@ -8,6 +8,7 @@
     <dimen name="space_16dp">16dp</dimen>
     <dimen name="space_20dp">20dp</dimen>
     <dimen name="space_minus_8dp">-8dp</dimen>
+    <dimen name="space_minus_16dp">-16dp</dimen>
 
     <!-- Font -->
     <dimen name="font_20sp">20sp</dimen>
