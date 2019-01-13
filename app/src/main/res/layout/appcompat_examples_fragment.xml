@@ -68,7 +68,7 @@
             <include
                 android:id="@+id/components"
                 layout="@layout/layout_appcompat_components" />
-            
+
         </LinearLayout>
 
     </ScrollView>
