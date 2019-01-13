@@ -22,7 +22,7 @@
 
             <include layout="@layout/layout_appcompat_colors" />
 
-            <include layout="@layout/layout_appcompat_texts" />
+            <include layout="@layout/layout_appcompat_color_texts" />
 
 
             <!--==================== Buttons ====================-->
@@ -32,38 +32,13 @@
 
             <include layout="@layout/layout_appcompat_buttons" />
 
-            <TextView
-                style="@style/LabelText"
-                android:text="TextView" />
 
+            <!--==================== Texts ====================-->
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_4dp"
-                android:text="TextView" />
+                style="@style/Title"
+                android:text="@string/texts" />
 
-            <TextView
-                style="@style/LabelText"
-                android:text="TextView(URL)" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_4dp"
-                android:autoLink="all"
-                android:text="https://google.com" />
-
-            <TextView
-                style="@style/LabelText"
-                android:text="CheckedTextView" />
-
-            <CheckedTextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/space_4dp"
-                android:checked="true"
-                android:gravity="center_vertical"
-                android:text="CheckedTextView" />
+            <include layout="@layout/layout_appcompat_texts" />
 
             <TextView
                 style="@style/LabelText"

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/space_16dp"
+    app:cardBackgroundColor="?attr/colorButtonNormal"
+    tools:ignore="HardcodedText"
+    tools:showIn="@layout/appcompat_examples_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColor"
+                android:textColor="?android:attr/textColor" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorPrimary"
+                android:textColor="?android:attr/textColorPrimary" />
+
+        </LinearLayout>
+
+        <View style="@style/Border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorPrimaryInverse"
+                android:textColor="?android:attr/textColorPrimaryInverse" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorPrimaryDisableOnly"
+                android:textColor="?android:attr/textColorPrimaryDisableOnly" />
+
+        </LinearLayout>
+
+        <View style="@style/Border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorSecondary"
+                android:textColor="?android:attr/textColorSecondary" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorSecondaryInverse"
+
+                android:textColor="?android:attr/textColorSecondaryInverse" />
+
+        </LinearLayout>
+
+        <View style="@style/Border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorTertiary"
+                android:textColor="?android:attr/textColorTertiary" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorTertiaryInverse"
+                android:textColor="?android:attr/textColorTertiaryInverse" />
+
+        </LinearLayout>
+
+        <View style="@style/Border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorHint"
+                android:textColor="?android:attr/textColorHint" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorHintInverse"
+                android:textColor="?android:attr/textColorHintInverse" />
+
+        </LinearLayout>
+
+        <View style="@style/Border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorHint"
+                android:textColor="?android:attr/textColorHighlight" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorHintInverse"
+                android:textColor="?android:attr/textColorHighlightInverse" />
+
+        </LinearLayout>
+
+        <View style="@style/Border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorLink"
+                android:textColor="?android:attr/textColorLink" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:text="textColorLinkInverse"
+                android:textColor="?android:attr/textColorLinkInverse" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
