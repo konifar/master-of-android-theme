@@ -5,6 +5,8 @@
     <string name="appcompat_title">AppCompat</string>
     <string name="material_components_title">Material Components</string>
 
+    <string name="colors">Colors</string>
+
     <string name="dark_mode">Dark mode</string>
 
 
