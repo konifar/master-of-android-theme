@@ -2,8 +2,10 @@
 <resources>
     <string name="app_name">Master of Theme</string>
 
-    <!-- AppCompat -->
     <string name="appcompat_title">AppCompat</string>
+    <string name="material_components_title">Material Components</string>
+
+
     <string name="appcompat_buttons">Buttons</string>
     <string name="appcompat_texts">Texts</string>
     <string name="appcompat_components">Components</string>

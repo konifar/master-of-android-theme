@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/amber_400</item>
         <item name="colorPrimaryDark">@color/amber_500</item>
         <item name="colorBackgroundFloating">@color/red_600</item>
@@ -22,7 +22,6 @@
         <item name="android:textColorHint">@color/grey_900</item>
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
-        <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
     </style>
 
     <item name="disabled_alpha" format="float" type="dimen">1.0</item>

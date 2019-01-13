@@ -16,6 +16,79 @@
 
             <TextView
                 style="@style/LabelText"
+                android:text="Button" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="@string/appcompat_buttons_button" />
+
+            <TextView
+                style="@style/LabelText"
+                android:text="Button(Disabled)" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:enabled="false"
+                android:text="@string/appcompat_buttons_button" />
+
+            <TextView
+                style="@style/LabelText"
+                android:text="ToggleButton" />
+
+            <ToggleButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="ToggleButton" />
+
+            <TextView
+                style="@style/LabelText"
+                android:text="Switch" />
+
+            <Switch
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:switchPadding="@dimen/space_4dp"
+                android:text="Switch" />
+
+            <TextView
+                style="@style/LabelText"
+                android:text="CheckBox" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="CheckBox" />
+
+            <TextView
+                style="@style/LabelText"
+                android:text="CheckBox(Disabled)" />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:enabled="false"
+                android:text="CheckBox" />
+
+            <TextView
+                style="@style/LabelText"
+                android:text="RadioButton" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/space_4dp"
+                android:text="RadioButton" />
+
+            <TextView
+                style="@style/LabelText"
                 android:text="TextView" />
 
             <TextView
@@ -134,6 +207,58 @@
                     tools:targetApi="o" />
 
             </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:orientation="vertical"
+                android:padding="@dimen/space_16dp">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="CardView" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:padding="@dimen/space_16dp"
+                        android:text="CardView" />
+
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="FloatingActionButton" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:src="@drawable/ic_close_24dp" />
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="AlertDialog" />
+
+                <Button
+                    android:id="@+id/alert_dialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="AlertDialog" />
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="BottomSheet" />
+
+            </LinearLayout>
 
         </LinearLayout>
 
