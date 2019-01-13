@@ -49,6 +49,16 @@
                 android:id="@+id/forms"
                 layout="@layout/layout_appcompat_forms" />
 
+
+            <!--==================== Actions ====================-->
+            <TextView
+                style="@style/Title"
+                android:text="@string/actions" />
+
+            <include
+                android:id="@+id/actions"
+                layout="@layout/layout_appcompat_actions" />
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -84,16 +94,6 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/space_4dp"
                     android:src="@drawable/ic_close_24dp" />
-
-                <TextView
-                    style="@style/LabelText"
-                    android:text="AlertDialog" />
-
-                <Button
-                    android:id="@+id/alert_dialog"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="AlertDialog" />
 
                 <TextView
                     style="@style/LabelText"
