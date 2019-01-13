@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.os.Handler
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentStatePagerAdapter
@@ -32,7 +33,9 @@ class MainActivity : AppCompatActivity() {
 
         setUpTabs()
 
-        setUpFooter()
+        setUpThemeIcons()
+
+        setUpDarkMode()
     }
 
     private fun setUpTheme() {
@@ -56,7 +59,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun setUpFooter() {
+    private fun setUpThemeIcons() {
         clearTheme()
         val config = getCurrentConfig()
         binding.themeIcons.getChildAt(config.index).isSelected = true
@@ -70,6 +73,27 @@ class MainActivity : AppCompatActivity() {
                 saveConfig(Config.from(i))
                 restart()
             }
+        }
+    }
+
+    private fun setUpDarkMode() {
+        val config = getCurrentConfig()
+        binding.darkMode.isSelected = config.darkMode
+        changeDarkMode(config.darkMode)
+
+        binding.darkMode.setOnCheckedChangeListener { _, isChecked ->
+            val c = getCurrentConfig()
+            c.darkMode = isChecked
+            saveConfig(c)
+            changeDarkMode(c.darkMode)
+        }
+    }
+
+    private fun changeDarkMode(darkMode: Boolean) {
+        if (darkMode) {
+            delegate.setLocalNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+        } else {
+            delegate.setLocalNightMode(AppCompatDelegate.MODE_NIGHT_NO)
         }
     }
 
@@ -124,12 +148,13 @@ class MainActivity : AppCompatActivity() {
 
     enum class Config(
         val index: Int,
-        val themeResId: Int
+        val themeResId: Int,
+        var darkMode: Boolean
     ) {
 
-        CAT_ONE(0, R.style.AppTheme),
-        CAT_TWO(1, R.style.AppTheme_CatTwo),
-        CAT_COLORFUL(2, R.style.AppTheme_AppCompat_Vivid);
+        CAT_ONE(0, R.style.AppTheme, false),
+        CAT_TWO(1, R.style.AppTheme_CatTwo, false),
+        CAT_COLORFUL(2, R.style.AppTheme_AppCompat_Vivid, false);
 
         companion object {
             fun from(index: Int): Config {

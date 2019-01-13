@@ -29,7 +29,7 @@
             android:id="@+id/footer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/white_1000"
+            android:background="?attr/colorBackgroundFloating"
             android:clipToPadding="false"
             android:elevation="4dp"
             android:paddingStart="@dimen/space_16dp"
