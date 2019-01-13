@@ -6,7 +6,7 @@
         <item name="colorPrimaryDark">@color/blue_grey_400</item>
         <item name="colorAccent">@color/green_A200</item>
         <item name="colorError">@color/red_500</item>
-        <item name="colorSwitchThumbNormal">@color/amber_800</item>
+        <item name="colorSwitchThumbNormal">@color/grey_500</item>
         <item name="android:textColor">@color/blue_grey_900</item>
         <item name="android:textColorSecondary">@color/black_1000</item>
         <item name="android:windowBackground">@color/blue_grey_50</item>

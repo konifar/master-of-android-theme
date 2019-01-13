@@ -42,7 +42,26 @@
                 <RatingBar
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
                     android:rating="3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="SeekBar" />
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:max="100"
+                    android:progress="30" />
             </LinearLayout>
 
         </LinearLayout>
