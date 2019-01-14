@@ -152,40 +152,40 @@
 
         </LinearLayout>
 
-        <!--<LinearLayout style="@style/ContainerRow">-->
+        <LinearLayout style="@style/ContainerRow">
 
-        <!--<LinearLayout style="@style/ContainerWithLabel">-->
+            <LinearLayout style="@style/ContainerWithLabel">
 
-        <!--<TextView-->
-        <!--style="@style/LabelText"-->
-        <!--android:text="BottomAppBar" />-->
+                <TextView
+                    style="@style/LabelText"
+                    android:text="BottomAppBar" />
 
-        <!--<androidx.coordinatorlayout.widget.CoordinatorLayout-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="@dimen/space_4dp"-->
-        <!--android:clipToPadding="false"-->
-        <!--android:paddingTop="32dp">-->
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:clipToPadding="false"
+                    android:paddingTop="32dp">
 
-        <!--<com.google.android.material.bottomappbar.BottomAppBar-->
-        <!--android:id="@+id/bottom_app_bar"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--app:navigationIcon="@drawable/ic_menu_24dp" />-->
+                    <com.google.android.material.bottomappbar.BottomAppBar
+                        android:id="@+id/bottom_app_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:navigationIcon="@drawable/ic_menu_24dp" />
 
-        <!--<com.google.android.material.floatingactionbutton.FloatingActionButton-->
-        <!--android:id="@+id/fab"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="wrap_content"-->
-        <!--android:layout_marginTop="-32dp"-->
-        <!--android:src="@drawable/ic_check_24dp_white"-->
-        <!--app:layout_anchor="@+id/bottom_app_bar" />-->
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-32dp"
+                        android:src="@drawable/ic_check_24dp_white"
+                        app:layout_anchor="@+id/bottom_app_bar" />
 
-        <!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
-        <!--</LinearLayout>-->
+            </LinearLayout>
 
-        <!--</LinearLayout>-->
+        </LinearLayout>
 
     </LinearLayout>
 

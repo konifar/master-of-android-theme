@@ -12,13 +12,12 @@
     </style>
 
     <style name="Moat.Widget.MaterialComponents.CardView" parent="Widget.MaterialComponents.CardView">
-        <item name="shapeAppearance">@style/Moat.ShapeAppearance.Shrine.MediumComponent</item>
-        <item name="cardCornerRadius">20dp</item>
+        <item name="shapeAppearance">@style/Moat.ShapeAppearance.Shrine.LargeComponent</item>
     </style>
 
-    <style name="Moat.ShapeAppearance.Shrine.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+    <style name="Moat.ShapeAppearance.Shrine.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
         <item name="cornerFamily">cut</item>
-        <item name="cornerSize">8dp</item>
+        <item name="cornerSize">20dp</item>
     </style>
 
     <style name="Moat.TextAppearance.Widget.IconMenu.Item" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
