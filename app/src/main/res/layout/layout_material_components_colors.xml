@@ -60,8 +60,7 @@
             <TextView
                 style="@style/ColorPaletteText"
                 android:background="?attr/colorOnSecondary"
-                android:text="colorOnSecondary"
-                android:textColor="?attr/colorSecondary" />
+                android:text="colorOnSecondary" />
 
         </LinearLayout>
 

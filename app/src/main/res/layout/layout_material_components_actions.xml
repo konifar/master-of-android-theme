@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/space_16dp">
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/alert_dialog"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="AlertDialog" />
+
+            <Space style="@style/Space16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/toast"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Toast" />
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/popup_menu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="PopupMenu" />
+
+            <Space style="@style/Space16dp" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/bottom_sheet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BottomSheet" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
