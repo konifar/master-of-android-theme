@@ -31,7 +31,7 @@
             android:layout_height="wrap_content"
             android:background="?attr/colorBackgroundFloating"
             android:clipToPadding="false"
-            android:elevation="4dp"
+            android:elevation="6dp"
             android:paddingStart="@dimen/space_16dp"
             android:paddingTop="@dimen/space_8dp"
             android:paddingEnd="@dimen/space_16dp"
@@ -80,6 +80,7 @@
                 android:text="@string/dark_mode"
                 android:textAppearance="@style/TextAppearance.AppCompat.Body1"
                 app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toEndOf="@+id/separator"
                 app:layout_constraintTop_toTopOf="parent" />
 
