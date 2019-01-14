@@ -84,7 +84,9 @@ class MainActivity : AppCompatActivity() {
             view.setOnClickListener {
                 clearThemeIcons()
                 it.isSelected = true
-                ThemeConfigManager.saveConfig(this, ThemeConfig.from(i))
+                val newConfig = ThemeConfig.from(i)
+                newConfig.darkMode = ThemeConfigManager.getCurrentConfig(this).darkMode
+                ThemeConfigManager.saveConfig(this, newConfig)
                 restart()
             }
         }
@@ -92,7 +94,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun setUpDarkMode() {
         val config = ThemeConfigManager.getCurrentConfig(this)
-        binding.darkMode.isSelected = config.darkMode
+        binding.darkMode.isChecked = config.darkMode
         changeDarkMode(config.darkMode)
 
         binding.darkMode.setOnCheckedChangeListener { _, isChecked ->
