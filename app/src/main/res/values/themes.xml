@@ -102,6 +102,7 @@
         <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>
         <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
         <item name="materialCardViewStyle">@style/Moat.Widget.MaterialComponents.CardView</item>
+        <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Entry</item>
     </style>
 
     <style name="MoatMaterialTheme.CatOne">
