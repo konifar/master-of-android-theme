@@ -1,13 +1,15 @@
 package com.konifar.moat
 
-import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
+import android.view.Menu
+import android.view.MenuItem
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentStatePagerAdapter
@@ -17,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val PREF_KEY_CONFIG = "pref_key_config"
+        const val REPOSITORY_URL = "https://github.com/konifar/master-of-android-theme"
     }
 
     private lateinit var binding: MainActivityBinding
@@ -38,53 +41,66 @@ class MainActivity : AppCompatActivity() {
         setUpDarkMode()
     }
 
-    private fun setUpTheme() {
-        val config = getCurrentConfig()
-        setTheme(config.themeResId)
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return super.onCreateOptionsMenu(menu)
     }
 
-    @SuppressLint("ApplySharedPref")
-    private fun saveConfig(config: Config) {
-        val pref = getSharedPreferences("default", Context.MODE_PRIVATE)
-        pref.edit().putString(PREF_KEY_CONFIG, config.toString()).commit()
-    }
-
-    private fun getCurrentConfig(): Config {
-        val pref = getSharedPreferences("default", Context.MODE_PRIVATE)
-        val configString = pref.getString(PREF_KEY_CONFIG, Config.CAT_ONE.toString())
-        return if (configString != null) {
-            Config.valueOf(configString)
-        } else {
-            Config.CAT_ONE
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        return when (item?.itemId) {
+            R.id.menu_github -> {
+                showBrowser(REPOSITORY_URL)
+                true
+            }
+            R.id.menu_oss -> {
+                true
+            }
+            else -> {
+                super.onOptionsItemSelected(item)
+            }
         }
     }
 
+    private fun showBrowser(url: String) {
+        CustomTabsIntent.Builder()
+            .setShowTitle(true)
+            .build()
+            .launchUrl(this, Uri.parse(url))
+    }
+
+    private fun setUpTheme() {
+        val config = ThemeConfigManager.getCurrentConfig(this)
+        setTheme(config.appCompatThemeResId)
+        changeDarkMode(config.darkMode)
+    }
+
     private fun setUpThemeIcons() {
-        clearTheme()
-        val config = getCurrentConfig()
+        clearThemeIcons()
+        val config = ThemeConfigManager.getCurrentConfig(this)
         binding.themeIcons.getChildAt(config.index).isSelected = true
 
         val count = binding.themeIcons.childCount
         for (i in 0 until count) {
             val view = binding.themeIcons.getChildAt(i)
             view.setOnClickListener {
-                clearTheme()
+                clearThemeIcons()
                 it.isSelected = true
-                saveConfig(Config.from(i))
+                val newConfig = ThemeConfig.from(i)
+                newConfig.darkMode = ThemeConfigManager.getCurrentConfig(this).darkMode
+                ThemeConfigManager.saveConfig(this, newConfig)
                 restart()
             }
         }
     }
 
     private fun setUpDarkMode() {
-        val config = getCurrentConfig()
-        binding.darkMode.isSelected = config.darkMode
-        changeDarkMode(config.darkMode)
+        val config = ThemeConfigManager.getCurrentConfig(this)
+        binding.darkMode.isChecked = config.darkMode
 
         binding.darkMode.setOnCheckedChangeListener { _, isChecked ->
-            val c = getCurrentConfig()
+            val c = ThemeConfigManager.getCurrentConfig(this)
             c.darkMode = isChecked
-            saveConfig(c)
+            ThemeConfigManager.saveConfig(this, c)
             changeDarkMode(c.darkMode)
         }
     }
@@ -107,7 +123,7 @@ class MainActivity : AppCompatActivity() {
         }, 200)
     }
 
-    private fun clearTheme() {
+    private fun clearThemeIcons() {
         val count = binding.themeIcons.childCount
         for (i in 0 until count) {
             binding.themeIcons.getChildAt(i).isSelected = false
@@ -148,25 +164,4 @@ class MainActivity : AppCompatActivity() {
         override fun getCount(): Int = tabs.count()
     }
 
-    enum class Config(
-        val index: Int,
-        val themeResId: Int,
-        var darkMode: Boolean
-    ) {
-
-        CAT_ONE(0, R.style.AppTheme, false),
-        CAT_TWO(1, R.style.AppTheme_CatTwo, false),
-        CAT_COLORFUL(2, R.style.AppTheme_AppCompat_Vivid, false);
-
-        companion object {
-            fun from(index: Int): Config {
-                return when (index) {
-                    0 -> CAT_ONE
-                    1 -> CAT_TWO
-                    2 -> CAT_COLORFUL
-                    else -> throw IllegalArgumentException("$index is not supported.")
-                }
-            }
-        }
-    }
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
@@ -21,9 +21,9 @@
 
                 <TextView
                     style="@style/LabelText"
-                    android:text="Button" />
+                    android:text="MaterialButton" />
 
-                <Button
+                <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enabled" />
@@ -35,41 +35,9 @@
 
                 <TextView
                     style="@style/LabelText"
-                    android:text="Button (Disabled)" />
+                    android:text="MaterialButton (Disabled)" />
 
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:enabled="false"
-                    android:text="Disabled" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <!-- ToggleButton -->
-        <LinearLayout style="@style/ContainerRow">
-
-            <LinearLayout style="@style/ContainerWithLabel">
-
-                <TextView
-                    style="@style/LabelText"
-                    android:text="ToggleButton" />
-
-                <ToggleButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Enabled" />
-            </LinearLayout>
-
-            <Space style="@style/Space16dp" />
-
-            <LinearLayout style="@style/ContainerWithLabel">
-
-                <TextView
-                    style="@style/LabelText"
-                    android:text="ToggleButton (Disabled)" />
-
-                <ToggleButton
+                <com.google.android.material.button.MaterialButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:enabled="false"
@@ -85,9 +53,9 @@
 
                 <TextView
                     style="@style/LabelText"
-                    android:text="Switch" />
+                    android:text="SwitchMaterial" />
 
-                <Switch
+                <com.google.android.material.switchmaterial.SwitchMaterial
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:switchPadding="@dimen/space_4dp"
@@ -100,9 +68,9 @@
 
                 <TextView
                     style="@style/LabelText"
-                    android:text="Switch (Disabled)" />
+                    android:text="SwitchMaterial (Disabled)" />
 
-                <Switch
+                <com.google.android.material.switchmaterial.SwitchMaterial
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:enabled="false"
@@ -119,9 +87,9 @@
 
                 <TextView
                     style="@style/LabelText"
-                    android:text="CheckBox" />
+                    android:text="MaterialCheckBox" />
 
-                <CheckBox
+                <com.google.android.material.checkbox.MaterialCheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enabled" />
@@ -133,9 +101,9 @@
 
                 <TextView
                     style="@style/LabelText"
-                    android:text="CheckBox (Disabled)" />
+                    android:text="MaterialCheckBox (Disabled)" />
 
-                <CheckBox
+                <com.google.android.material.checkbox.MaterialCheckBox
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:enabled="false"
@@ -151,9 +119,9 @@
 
                 <TextView
                     style="@style/LabelText"
-                    android:text="RadioButton" />
+                    android:text="MaterialRadioButton" />
 
-                <RadioButton
+                <com.google.android.material.radiobutton.MaterialRadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Enabled" />
@@ -165,9 +133,9 @@
 
                 <TextView
                     style="@style/LabelText"
-                    android:text="RadioButton (Disabled)" />
+                    android:text="MaterialRadioButton (Disabled)" />
 
-                <RadioButton
+                <com.google.android.material.radiobutton.MaterialRadioButton
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:enabled="false"
@@ -178,4 +146,4 @@
 
     </LinearLayout>
 
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>

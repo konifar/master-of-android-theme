@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clipToPadding="false"
+        android:orientation="vertical"
+        android:padding="@dimen/space_16dp">
+
+        <LinearLayout
+            style="@style/ContainerRow"
+            android:layout_marginTop="@dimen/space_minus_8dp">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="ProgressBar" />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="RatingBar" />
+
+                <RatingBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:rating="3" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="SeekBar" />
+
+                <SeekBar
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:max="100"
+                    android:progress="30" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="FloatingActionButton" />
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/space_8dp"
+                    android:src="@drawable/ic_check_24dp_white" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="Chip (Entry)" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8dp"
+                    android:text="Chip"
+                    app:chipIcon="@drawable/ic_check_24dp_white" />
+            </LinearLayout>
+
+            <Space style="@style/Space8dp" />
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="Chip (Action)" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8dp"
+                    android:text="Chip"
+                    app:chipIcon="@drawable/ic_check_24dp_white" />
+            </LinearLayout>
+
+            <Space style="@style/Space8dp" />
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="Chip (Filter)" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_8dp"
+                    android:text="Chip" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="BottomNavigationView" />
+
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    app:menu="@menu/bottom_navigation_menu" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout style="@style/ContainerRow">
+
+            <LinearLayout style="@style/ContainerWithLabel">
+
+                <TextView
+                    style="@style/LabelText"
+                    android:text="BottomAppBar" />
+
+                <androidx.coordinatorlayout.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/space_4dp"
+                    android:clipToPadding="false"
+                    android:paddingTop="32dp">
+
+                    <com.google.android.material.bottomappbar.BottomAppBar
+                        android:id="@+id/bottom_app_bar"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:navigationIcon="@drawable/ic_menu_24dp" />
+
+                    <com.google.android.material.floatingactionbutton.FloatingActionButton
+                        android:id="@+id/fab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-32dp"
+                        android:src="@drawable/ic_check_24dp_white"
+                        app:layout_anchor="@+id/bottom_app_bar" />
+
+                </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

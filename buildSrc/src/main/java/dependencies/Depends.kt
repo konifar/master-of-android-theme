@@ -64,7 +64,7 @@ object Depends {
     }
 
     object Material {
-        const val core = "com.google.android.material:material:1.1.0-alpha01"
+        const val core = "com.google.android.material:material:1.1.0-alpha02"
     }
 
     object Gms {

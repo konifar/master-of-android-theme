@@ -4,10 +4,10 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.appcompat.view.ContextThemeWrapper
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import com.konifar.moat.databinding.AppcompatExamplesFragmentBinding
-import kotlinx.android.synthetic.main.layout_appcompat_forms.view.*
 
 class AppCompatExamplesFragment : Fragment() {
 
@@ -19,10 +19,16 @@ class AppCompatExamplesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val binding: AppcompatExamplesFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.appcompat_examples_fragment, container, false)
-
-        binding.forms.text_input_layout_error.error = "Error message"
-
+        val contextThemeWrapper = ContextThemeWrapper(activity, getCurrentTheme())
+        val localInflater = inflater.cloneInContext(contextThemeWrapper)
+        val binding: AppcompatExamplesFragmentBinding = DataBindingUtil.inflate(localInflater, R.layout.appcompat_examples_fragment, container, false)
         return binding.root
+    }
+
+    private fun getCurrentTheme(): Int {
+        return context?.let {
+            val config = ThemeConfigManager.getCurrentConfig(it)
+            config.appCompatThemeResId
+        } ?: R.style.MoatAppCompatTheme_CatColorful
     }
 }

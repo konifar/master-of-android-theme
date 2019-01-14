@@ -1,55 +1,156 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+    <!--==================== AppCompat ====================-->
+    <style name="MoatAppCompatTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- For menu color -->
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimary</item>
+        <item name="android:itemTextAppearance">@style/Moat.TextAppearance.Widget.IconMenu.Item</item>
+
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>
+        <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
+    </style>
+
+    <style name="MoatAppCompatTheme.CatOne">
         <item name="colorPrimary">@color/blue_grey_300</item>
         <item name="colorPrimaryDark">@color/blue_grey_400</item>
+        <item name="colorSecondary">@color/blue_grey_500</item>
         <item name="colorAccent">@color/green_A200</item>
         <item name="colorError">@color/red_500</item>
         <item name="colorSwitchThumbNormal">@color/grey_500</item>
         <item name="android:textColor">@color/blue_grey_900</item>
         <item name="android:textColorSecondary">@color/black_1000</item>
         <item name="android:windowBackground">@color/blue_grey_50</item>
-        <item name="android:windowContentTransitions">true</item>
-        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
-        <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>
-        <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
     </style>
 
-
-    <style name="AppTheme.CatTwo">
+    <style name="MoatAppCompatTheme.CatTwo">
         <item name="colorPrimary">@color/orange_200</item>
         <item name="colorPrimaryDark">@color/orange_300</item>
+        <item name="colorSecondary">@color/orange_400</item>
         <item name="colorAccent">@color/amber_A700</item>
         <item name="colorError">@color/red_500</item>
         <item name="colorSwitchThumbNormal">@color/grey_500</item>
         <item name="android:textColor">@color/black_1000</item>
         <item name="android:textColorSecondary">@color/grey_900</item>
         <item name="android:windowBackground">@color/orange_50</item>
+    </style>
+
+    <style name="MoatAppCompatTheme.CatColorful">
+        <!-- Pallet -->
+        <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryDark">@color/pink_500</item>
+        <item name="colorAccent">@color/orange_500</item>
+        <item name="colorButtonNormal">@color/amber_500</item>
+        <item name="colorControlActivated">@color/purple_500</item>
+        <item name="colorControlHighlight">@color/teal_500</item>
+        <item name="colorControlNormal">@color/blue_500</item>
+        <item name="colorSwitchThumbNormal">@color/red_500</item>
+        <item name="controlBackground">?attr/selectableItemBackgroundBorderless</item>
+
+        <!--<item name="android:colorForeground">@color/foreground_material_dark</item>-->
+        <!--<item name="android:colorForegroundInverse">@color/foreground_material_light</item>-->
+        <!--<item name="android:colorBackground">@color/background_material_dark</item>-->
+        <!--<item name="android:colorBackgroundCacheHint">@color/abc_background_cache_hint_selector_material_dark</item>-->
+        <item name="android:disabledAlpha">@dimen/disabled_alpha</item>
+        <!--<item name="android:backgroundDimAmount">0.6</item>-->
+        <!--<item name="android:windowBackground">@color/background_material_dark</item>-->
+
+
+        <item name="colorBackgroundFloating">@color/red_600</item>
+        <item name="colorError">@color/brown_500</item>
+        <item name="actionMenuTextColor">@color/light_blue_500</item>
+        <item name="editTextColor">@color/blue_grey_500</item>
+        <item name="tooltipForegroundColor">@color/lime_500</item>
+        <item name="textColorAlertDialogListItem">@color/black_1000</item>
+        <item name="textColorSearchUrl">@color/black_1000</item>
+
+        <item name="android:windowBackground">@color/cyan_50</item>
+
+        <item name="android:colorEdgeEffect">@color/yellow_900</item>
+        <!--<item name="android:colorActivatedHighlight"></item>-->
+        <!--<item name="android:colorBackground"></item>-->
+        <!--<item name="android:colorBackgroundCacheHint"></item>-->
+        <!--<item name="android:colorFocusedHighlight"></item>-->
+        <!--<item name="android:colorForeground"></item>-->
+        <!--<item name="android:colorSecondary" tools:ignore="NewApi"></item>-->
+        <!--<item name="android:colorLongPressedHighlight"></item>-->
+
+        <!-- Text colors -->
+        <item name="android:textColor">@color/yellow_900</item>
+        <!-- AppCompat -->
+        <item name="android:textColorPrimary">@color/pink_A700</item>
+        <item name="android:textColorPrimaryInverse">@color/pink_50</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/pink_A100</item>
+        <item name="android:textColorSecondary">@color/purple_A700</item>
+        <item name="android:textColorSecondaryInverse">@color/purple_50</item>
+        <item name="android:textColorTertiary">@color/indigo_A700</item>
+        <item name="android:textColorTertiaryInverse">@color/indigo_50</item>
+        <item name="android:textColorHint">@color/light_blue_A700</item>
+        <item name="android:textColorHintInverse">@color/light_blue_50</item>
+        <item name="android:textColorHighlight">@color/yellow_A700</item>
+        <item name="android:textColorHighlightInverse">@color/yellow_50</item>
+        <item name="android:textColorLink">@color/deep_orange_A700</item>
+        <item name="android:textColorLinkInverse">@color/deep_orange_50</item>
+        <item name="android:textColorAlertDialogListItem">@color/teal_A700</item>
+    </style>
+
+
+    <!--==================== MaterialComponents ====================-->
+    <style name="MoatMaterialTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorSurface">?attr/colorBackgroundFloating</item>
+        <item name="colorOnSurface">?android:attr/textColor</item>
+        <!-- For menu color -->
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimary</item>
+        <item name="android:itemTextAppearance">@style/Moat.TextAppearance.Widget.IconMenu.Item</item>
+
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
         <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>
         <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
+        <item name="materialCardViewStyle">@style/Moat.Widget.MaterialComponents.CardView</item>
+        <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Entry</item>
     </style>
 
-
-    <style name="Moat.Widget.Design.TabLayout" parent="Widget.Design.TabLayout">
-        <item name="elevation">4dp</item>
-        <item name="android:background">?attr/colorPrimary</item>
-        <item name="tabTextColor">?android:textColorTertiary</item>
+    <style name="MoatMaterialTheme.CatOne">
+        <item name="colorPrimary">@color/blue_grey_300</item>
+        <item name="colorPrimaryVariant">@color/blue_grey_400</item>
+        <item name="colorPrimaryDark">@color/blue_grey_400</item>
+        <item name="colorSecondary">@color/blue_grey_500</item>
+        <item name="colorOnSecondary">@color/white_1000</item>
+        <item name="colorSecondaryVariant">@color/blue_grey_600</item>
+        <item name="colorAccent">@color/green_A200</item>
+        <item name="colorError">@color/red_500</item>
+        <item name="colorSwitchThumbNormal">@color/grey_500</item>
+        <item name="android:textColor">@color/blue_grey_900</item>
+        <item name="android:textColorSecondary">@color/black_1000</item>
+        <item name="android:windowBackground">@color/blue_grey_50</item>
     </style>
 
-    <style name="Moat.Widget.AppCompat.ActionBar.Solid" parent="Widget.AppCompat.ActionBar.Solid">
-        <item name="elevation">0dp</item>
+    <style name="MoatMaterialTheme.CatTwo">
+        <item name="colorPrimary">@color/orange_200</item>
+        <item name="colorPrimaryVariant">@color/orange_300</item>
+        <item name="colorPrimaryDark">@color/orange_300</item>
+        <item name="colorSecondary">@color/orange_400</item>
+        <item name="colorOnSecondary">@color/white_1000</item>
+        <item name="colorSecondaryVariant">@color/orange_500</item>
+        <item name="colorAccent">@color/amber_A700</item>
+        <item name="colorError">@color/red_500</item>
+        <item name="colorSwitchThumbNormal">@color/grey_500</item>
+        <item name="android:textColor">@color/black_1000</item>
+        <item name="android:textColorSecondary">@color/grey_900</item>
+        <item name="android:windowBackground">@color/orange_50</item>
     </style>
 
-    <item name="disabled_alpha" format="float" type="dimen">1.0</item>
-
-
-    <style name="AppTheme.AppCompat.Vivid" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="MoatMaterialTheme.CatColorful">
         <!-- Pallet -->
         <item name="colorPrimary">@color/green_500</item>
+        <item name="colorPrimaryVariant">@color/pink_500</item>
         <item name="colorPrimaryDark">@color/pink_500</item>
+        <item name="colorSecondary">@color/orange_400</item>
+        <item name="colorOnSecondary">@color/white_1000</item>
+        <item name="colorSecondaryVariant">@color/orange_500</item>
         <item name="colorAccent">@color/orange_500</item>
         <item name="colorButtonNormal">@color/amber_500</item>
         <item name="colorControlActivated">@color/purple_500</item>

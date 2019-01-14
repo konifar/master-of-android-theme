@@ -13,14 +13,4 @@
     <string name="components">Components</string>
 
     <string name="dark_mode">Dark mode</string>
-
-
-    <string name="appcompat_buttons">Buttons</string>
-    <string name="appcompat_texts">Texts</string>
-    <string name="appcompat_components">Components</string>
-    <string name="appcompat_buttons_button">Button</string>
-
-    <string name="components_toolbar_title">Toolbar title</string>
-    <string name="components_toolbar_subtitle">Toolbar subtitle</string>
-
 </resources>
