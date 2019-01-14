@@ -58,14 +58,14 @@
                 layout="@layout/layout_material_components_actions" />
 
 
-            <!--==================== Components ====================-->
-            <TextView
-                style="@style/Title"
-                android:text="@string/components" />
+            <!--&lt;!&ndash;==================== Components ====================&ndash;&gt;-->
+            <!--<TextView-->
+            <!--style="@style/Title"-->
+            <!--android:text="@string/components" />-->
 
-            <include
-                android:id="@+id/components"
-                layout="@layout/layout_material_components_components" />
+            <!--<include-->
+            <!--android:id="@+id/components"-->
+            <!--layout="@layout/layout_material_components_components" />-->
         </LinearLayout>
 
     </ScrollView>

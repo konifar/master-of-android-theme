@@ -71,6 +71,7 @@ class MainActivity : AppCompatActivity() {
     private fun setUpTheme() {
         val config = ThemeConfigManager.getCurrentConfig(this)
         setTheme(config.appCompatThemeResId)
+        changeDarkMode(config.darkMode)
     }
 
     private fun setUpThemeIcons() {
@@ -95,7 +96,6 @@ class MainActivity : AppCompatActivity() {
     private fun setUpDarkMode() {
         val config = ThemeConfigManager.getCurrentConfig(this)
         binding.darkMode.isChecked = config.darkMode
-        changeDarkMode(config.darkMode)
 
         binding.darkMode.setOnCheckedChangeListener { _, isChecked ->
             val c = ThemeConfigManager.getCurrentConfig(this)
