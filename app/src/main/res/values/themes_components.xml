@@ -21,6 +21,10 @@
         <item name="cornerSize">8dp</item>
     </style>
 
+    <style name="Moat.TextAppearance.Widget.IconMenu.Item" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
+
     <item name="disabled_alpha" format="float" type="dimen">1.0</item>
 
 </resources>

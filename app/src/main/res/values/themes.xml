@@ -3,6 +3,10 @@
 
     <!--==================== AppCompat ====================-->
     <style name="MoatAppCompatTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <!-- For menu color -->
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimary</item>
+        <item name="android:itemTextAppearance">@style/Moat.TextAppearance.Widget.IconMenu.Item</item>
+
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
         <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>
@@ -97,6 +101,10 @@
     <style name="MoatMaterialTheme" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <item name="colorSurface">?attr/colorBackgroundFloating</item>
         <item name="colorOnSurface">?android:attr/textColor</item>
+        <!-- For menu color -->
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimary</item>
+        <item name="android:itemTextAppearance">@style/Moat.TextAppearance.Widget.IconMenu.Item</item>
+
         <item name="android:windowContentTransitions">true</item>
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
         <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>

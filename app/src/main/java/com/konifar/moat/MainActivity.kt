@@ -1,11 +1,15 @@
 package com.konifar.moat
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.os.Handler
+import android.view.Menu
+import android.view.MenuItem
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
+import androidx.browser.customtabs.CustomTabsIntent
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentStatePagerAdapter
@@ -15,6 +19,7 @@ class MainActivity : AppCompatActivity() {
 
     companion object {
         const val PREF_KEY_CONFIG = "pref_key_config"
+        const val REPOSITORY_URL = "https://github.com/konifar/master-of-android-theme"
     }
 
     private lateinit var binding: MainActivityBinding
@@ -34,6 +39,33 @@ class MainActivity : AppCompatActivity() {
         setUpThemeIcons()
 
         setUpDarkMode()
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        menuInflater.inflate(R.menu.main_menu, menu)
+        return super.onCreateOptionsMenu(menu)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem?): Boolean {
+        return when (item?.itemId) {
+            R.id.menu_github -> {
+                showBrowser(REPOSITORY_URL)
+                true
+            }
+            R.id.menu_oss -> {
+                true
+            }
+            else -> {
+                super.onOptionsItemSelected(item)
+            }
+        }
+    }
+
+    private fun showBrowser(url: String) {
+        CustomTabsIntent.Builder()
+            .setShowTitle(true)
+            .build()
+            .launchUrl(this, Uri.parse(url))
     }
 
     private fun setUpTheme() {
