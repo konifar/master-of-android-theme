@@ -4,6 +4,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <item name="colorPrimary">@color/blue_grey_300</item>
         <item name="colorPrimaryDark">@color/blue_grey_400</item>
+        <item name="colorSecondary">@color/blue_grey_500</item>
         <item name="colorAccent">@color/green_A200</item>
         <item name="colorError">@color/red_500</item>
         <item name="colorSwitchThumbNormal">@color/grey_500</item>
@@ -16,10 +17,27 @@
         <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
     </style>
 
+    <style name="AppTheme.Material" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/blue_grey_300</item>
+        <item name="colorPrimaryDark">@color/blue_grey_400</item>
+        <item name="colorSecondary">@color/blue_grey_500</item>
+        <item name="colorAccent">@color/green_A200</item>
+        <item name="colorError">@color/red_500</item>
+        <item name="colorSwitchThumbNormal">@color/grey_500</item>
+        <item name="android:textColor">@color/blue_grey_900</item>
+        <item name="android:textColorSecondary">@color/black_1000</item>
+        <item name="android:windowBackground">@color/blue_grey_50</item>
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>
+        <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
+        <item name="materialCardViewStyle">@style/Moat.Widget.MaterialComponents.CardView</item>
+    </style>
 
     <style name="AppTheme.CatTwo">
         <item name="colorPrimary">@color/orange_200</item>
         <item name="colorPrimaryDark">@color/orange_300</item>
+        <item name="colorSecondary">@color/orange_400</item>
         <item name="colorAccent">@color/amber_A700</item>
         <item name="colorError">@color/red_500</item>
         <item name="colorSwitchThumbNormal">@color/grey_500</item>
@@ -30,6 +48,7 @@
         <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
         <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>
         <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
+        <item name="materialCardViewStyle">@style/Moat.Widget.MaterialComponents.CardView</item>
     </style>
 
 
@@ -42,6 +61,17 @@
     <style name="Moat.Widget.AppCompat.ActionBar.Solid" parent="Widget.AppCompat.ActionBar.Solid">
         <item name="elevation">0dp</item>
     </style>
+
+    <style name="Moat.Widget.MaterialComponents.CardView" parent="Widget.MaterialComponents.CardView">
+        <item name="shapeAppearance">@style/Moat.ShapeAppearance.Shrine.MediumComponent</item>
+        <item name="cardCornerRadius">24dp</item>
+    </style>
+
+    <style name="Moat.ShapeAppearance.Shrine.MediumComponent" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">8dp</item>
+    </style>
+
 
     <item name="disabled_alpha" format="float" type="dimen">1.0</item>
 

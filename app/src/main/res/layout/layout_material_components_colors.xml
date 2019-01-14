@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:ignore="HardcodedText"
+    tools:showIn="@layout/appcompat_examples_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorPrimary"
+                android:text="colorPrimary" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorPrimaryVariant"
+                android:text="colorPrimaryVariant" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorOnPrimary"
+                android:text="colorOnPrimary" />
+
+        </LinearLayout>
+
+        <View style="@style/Border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorSecondary"
+                android:text="colorSecondary" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorSecondaryVariant"
+                android:text="colorSecondaryVariant" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorOnSecondary"
+                android:text="colorOnSecondary" />
+
+        </LinearLayout>
+
+        <View style="@style/Border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?android:attr/colorBackground"
+                android:text="colorBackground" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorOnBackground"
+                android:text="colorOnBackground"
+                android:textColor="?android:attr/colorBackground" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorSurface"
+                android:text="colorSurface" />
+
+        </LinearLayout>
+
+        <View style="@style/Border" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorOnSurface"
+                android:text="colorOnSurface"
+                android:textColor="?attr/colorSurface" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorError"
+                android:text="colorError" />
+
+            <View style="@style/Border.Vertical" />
+
+            <TextView
+                style="@style/ColorPaletteText"
+                android:background="?attr/colorOnError"
+                android:text="colorOnError" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>
