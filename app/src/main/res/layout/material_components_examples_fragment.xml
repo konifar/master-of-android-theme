@@ -28,7 +28,44 @@
                 android:text="@string/buttons" />
 
             <include layout="@layout/layout_material_components_buttons" />
-            
+
+
+            <!--==================== Texts ====================-->
+            <TextView
+                style="@style/Title"
+                android:text="@string/texts" />
+
+            <include layout="@layout/layout_material_components_texts" />
+
+
+            <!--==================== Forms ====================-->
+            <TextView
+                style="@style/Title"
+                android:text="@string/forms" />
+
+            <include
+                android:id="@+id/forms"
+                layout="@layout/layout_material_components_forms" />
+
+
+            <!--==================== Actions ====================-->
+            <TextView
+                style="@style/Title"
+                android:text="@string/actions" />
+
+            <include
+                android:id="@+id/actions"
+                layout="@layout/layout_material_components_actions" />
+
+
+            <!--==================== Components ====================-->
+            <TextView
+                style="@style/Title"
+                android:text="@string/components" />
+
+            <include
+                android:id="@+id/components"
+                layout="@layout/layout_material_components_components" />
         </LinearLayout>
 
     </ScrollView>

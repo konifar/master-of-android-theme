@@ -3,8 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    tools:ignore="HardcodedText"
-    tools:showIn="@layout/appcompat_examples_fragment">
+    tools:ignore="HardcodedText">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -61,7 +60,8 @@
             <TextView
                 style="@style/ColorPaletteText"
                 android:background="?attr/colorOnSecondary"
-                android:text="colorOnSecondary" />
+                android:text="colorOnSecondary"
+                android:textColor="?attr/colorSecondary" />
 
         </LinearLayout>
 

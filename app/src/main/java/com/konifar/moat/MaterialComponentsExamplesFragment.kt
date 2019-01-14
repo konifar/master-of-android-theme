@@ -19,9 +19,16 @@ class MaterialComponentsExamplesFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val contextThemeWrapper = ContextThemeWrapper(activity, R.style.AppTheme_Material)
+        val contextThemeWrapper = ContextThemeWrapper(activity, getCurrentTheme())
         val localInflater = inflater.cloneInContext(contextThemeWrapper)
         val binding: MaterialComponentsExamplesFragmentBinding = DataBindingUtil.inflate(localInflater, R.layout.material_components_examples_fragment, container, false)
         return binding.root
+    }
+
+    private fun getCurrentTheme(): Int {
+        return context?.let {
+            val config = ThemeConfigManager.getCurrentConfig(it)
+            config.materialThemeResId
+        } ?: R.style.MoatMaterialTheme_CatOne
     }
 }

@@ -6,8 +6,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="@dimen/space_16dp"
     app:cardBackgroundColor="?attr/colorButtonNormal"
-    tools:ignore="HardcodedText"
-    tools:showIn="@layout/appcompat_examples_fragment">
+    tools:ignore="HardcodedText">
 
     <LinearLayout
         android:layout_width="match_parent"
