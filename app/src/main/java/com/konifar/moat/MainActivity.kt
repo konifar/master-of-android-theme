@@ -13,6 +13,7 @@ import androidx.browser.customtabs.CustomTabsIntent
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentStatePagerAdapter
+import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 import com.konifar.moat.databinding.MainActivityBinding
 
 class MainActivity : AppCompatActivity() {
@@ -53,6 +54,8 @@ class MainActivity : AppCompatActivity() {
                 true
             }
             R.id.menu_oss -> {
+                OssLicensesMenuActivity.setActivityTitle(getString(R.string.oss_license_title))
+                startActivity(Intent(this, OssLicensesMenuActivity::class.java))
                 true
             }
             else -> {
