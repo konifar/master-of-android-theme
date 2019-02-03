@@ -26,6 +26,7 @@ class CatGreyActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setUpTheme()
         binding = DataBindingUtil.setContentView(this, R.layout.cat_grey_activity)
+        setSupportActionBar(binding.toolbar)
         setUpTabs()
     }
 

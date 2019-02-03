@@ -19,9 +19,9 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="AlertDialog" />
+                android:text="Dialog" />
 
-            <Space style="@style/Space16dp" />
+            <Space style="@style/Space8dp" />
 
             <Button
                 android:id="@+id/toast"
@@ -30,25 +30,14 @@
                 android:layout_weight="1"
                 android:text="Toast" />
 
-        </LinearLayout>
-
-        <LinearLayout style="@style/ContainerRow">
+            <Space style="@style/Space8dp" />
 
             <Button
                 android:id="@+id/popup_menu"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:text="PopupMenu" />
-
-            <Space style="@style/Space16dp" />
-
-            <Button
-                android:id="@+id/bottom_sheet"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="BottomSheet" />
+                android:text="Popup" />
 
         </LinearLayout>
 

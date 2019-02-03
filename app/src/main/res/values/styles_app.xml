@@ -8,11 +8,16 @@
         <item name="layout_scrollFlags">scroll|exitUntilCollapsed|snap</item>
     </style>
 
+    <style name="DefaultHeaderImageWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="layout_collapseMode">parallax</item>
+    </style>
+
     <style name="DefaultHeaderImage">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
         <item name="android:scaleType">centerCrop</item>
-        <item name="layout_collapseMode">parallax</item>
     </style>
 
     <style name="Title">

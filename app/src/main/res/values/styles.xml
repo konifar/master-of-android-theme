@@ -15,4 +15,8 @@
         <item name="android:activityCloseExitAnimation">@anim/keep</item>
     </style>
 
+    <style name="ExpandedToolbarTitleTextAppearance" parent="@style/TextAppearance.AppCompat.Display1">
+        <item name="android:textColor">@color/white_1000</item>
+    </style>
+
 </resources>

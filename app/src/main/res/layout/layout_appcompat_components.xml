@@ -72,23 +72,6 @@
 
                 <TextView
                     style="@style/LabelText"
-                    android:text="FloatingActionButton" />
-
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="@dimen/space_8dp"
-                    android:src="@drawable/ic_check_24dp_white" />
-            </LinearLayout>
-
-        </LinearLayout>
-
-        <LinearLayout style="@style/ContainerRow">
-
-            <LinearLayout style="@style/ContainerWithLabel">
-
-                <TextView
-                    style="@style/LabelText"
                     android:text="BottomNavigationView" />
 
                 <com.google.android.material.bottomnavigation.BottomNavigationView
