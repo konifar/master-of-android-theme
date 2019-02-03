@@ -16,13 +16,13 @@
 
                 <ImageView
                     style="@style/DefaultHeaderImage"
-                    android:src="@drawable/img_cat_one"
+                    android:src="@drawable/img_cat_two"
                     tools:ignore="ContentDescription" />
 
                 <androidx.appcompat.widget.Toolbar
                     android:layout_width="match_parent"
                     android:layout_height="?attr/actionBarSize"
-                    app:title="@string/appcompat_title" />
+                    app:title="@string/material_components_title" />
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>
 

@@ -1,4 +1,4 @@
-package com.konifar.moat.appcompat
+package com.konifar.moat.materialcomponents
 
 import android.content.Intent
 import android.os.Bundle
@@ -13,19 +13,19 @@ import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 import com.konifar.moat.CommonHelper
 import com.konifar.moat.R
 import com.konifar.moat.ThemeConfigManager
-import com.konifar.moat.databinding.CatGreyActivityBinding
+import com.konifar.moat.databinding.CatBrownActivityBinding
 
 /**
- * AppCompat theme
+ * MaterialComponents theme
  */
-class CatGreyActivity : AppCompatActivity() {
+class CatBrownActivity : AppCompatActivity() {
 
-    private lateinit var binding: CatGreyActivityBinding
+    private lateinit var binding: CatBrownActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setUpTheme()
-        binding = DataBindingUtil.setContentView(this, R.layout.cat_grey_activity)
+        binding = DataBindingUtil.setContentView(this, R.layout.cat_brown_activity)
         setUpTabs()
     }
 
@@ -53,6 +53,7 @@ class CatGreyActivity : AppCompatActivity() {
 
     private fun setUpTheme() {
         val config = ThemeConfigManager.getCurrentConfig(this)
+        setTheme(config.appCompatThemeResId)
         CommonHelper.changeDarkMode(this, config.darkMode)
     }
 
@@ -75,15 +76,15 @@ class CatGreyActivity : AppCompatActivity() {
             abstract val fragment: Fragment
 
             class ButtonsAndTexts : Tab(R.string.buttons_and_texts_title) {
-                override val fragment = AppCompatButtonAndTextsFragment.newInstance()
+                override val fragment = MaterialComponentsButtonAndTextsFragment.newInstance()
             }
 
             class Components : Tab(R.string.components_title) {
-                override val fragment = AppCompatComponentsFragment.newInstance()
+                override val fragment = MaterialComponentsComponentsFragment.newInstance()
             }
 
             class Colors : Tab(R.string.colors_title) {
-                override val fragment = AppCompatColorsFragment.newInstance()
+                override val fragment = MaterialComponentsColorsFragment.newInstance()
             }
         }
 

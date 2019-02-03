@@ -1,6 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?><!-- Specific styles for app -->
 <resources>
 
+    <style name="DefaultCollapsingToolbarLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/brand_image_height</item>
+        <item name="contentScrim">?attr/colorPrimary</item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed|snap</item>
+    </style>
+
+    <style name="DefaultHeaderImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="layout_collapseMode">parallax</item>
+    </style>
+
     <style name="Title">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
         <item name="android:layout_height">wrap_content</item>
