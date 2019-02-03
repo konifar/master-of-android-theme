@@ -33,10 +33,10 @@
         <View style="@style/Border" />
 
         <TextView
-            android:id="@+id/study"
+            android:id="@+id/show_case"
             style="@style/SettingRow"
-            android:drawableStart="@drawable/ic_cat_grey"
-            android:text="@string/appcompat_title" />
+            android:drawableStart="@drawable/ic_cat_colorful"
+            android:text="@string/show_case_title" />
 
     </LinearLayout>
 

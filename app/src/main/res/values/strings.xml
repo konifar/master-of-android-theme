@@ -4,6 +4,7 @@
 
     <string name="appcompat_title">AppCompat</string>
     <string name="material_components_title">Material Components</string>
+    <string name="show_case_title">Show case</string>
 
     <string name="colors_title">Colors</string>
     <string name="texts_title">Texts</string>
