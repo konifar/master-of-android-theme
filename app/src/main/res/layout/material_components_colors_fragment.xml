@@ -22,7 +22,7 @@
                 android:text="@string/colors" />
 
             <include layout="@layout/layout_material_components_colors" />
-            
+
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>

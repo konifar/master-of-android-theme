@@ -4,6 +4,7 @@ import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
 import android.view.LayoutInflater
+import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
 import com.konifar.moat.appcompat.MoatAppCompatActivity
@@ -28,6 +29,17 @@ class SettingsDialogFragment : DialogFragment() {
     }
 
     private fun setUp(binding: SettingsDialogFragmentBinding) {
+        if (context == null) return
+
+        val config = ThemeConfigManager.getCurrentConfig(context!!)
+        binding.darkMode.isChecked = config.darkMode
+        binding.darkMode.setOnCheckedChangeListener { _, isChecked ->
+            val c = ThemeConfigManager.getCurrentConfig(context!!)
+            c.darkMode = isChecked
+            ThemeConfigManager.saveConfig(context!!, c)
+            CommonHelper.changeDarkMode(activity as AppCompatActivity, c.darkMode)
+        }
+
         binding.appcompat.setOnClickListener {
             val intent = MoatAppCompatActivity.createIntent(context!!)
             startActivity(intent)

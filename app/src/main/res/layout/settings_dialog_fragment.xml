@@ -6,6 +6,16 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
+        <Switch
+            android:id="@+id/dark_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_16dp"
+            android:switchPadding="@dimen/space_12dp"
+            android:text="@string/dark_mode"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
         <TextView
             android:id="@+id/appcompat"
             style="@style/SettingRow"
