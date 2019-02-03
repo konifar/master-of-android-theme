@@ -13,8 +13,7 @@
         android:label="@string/app_name"
         android:largeHeap="true"
         android:roundIcon="@mipmap/ic_launcher_round"
-        android:supportsRtl="true"
-        android:theme="@style/MoatAppCompatTheme.CatOne">
+        android:supportsRtl="true">
 
         <meta-data
             android:name="io.fabric.ApiKey"
@@ -23,7 +22,8 @@
         <activity
             android:name=".appcompat.MoatAppCompatActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
-            android:label="@string/appcompat_title">
+            android:label="@string/appcompat_title"
+            android:theme="@style/MoatAppCompatTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <action android:name="android.intent.action.VIEW" />
@@ -37,7 +37,7 @@
             android:name=".materialcomponents.MoatMaterialComponentsActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/material_components_title"
-            android:theme="@style/MoatMaterialTheme.CatTwo" />
+            android:theme="@style/MoatMaterialTheme" />
 
         <!-- OSS Licenses -->
         <activity
