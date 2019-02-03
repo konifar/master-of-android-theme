@@ -1,5 +1,6 @@
 package com.konifar.moat.appcompat
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -12,6 +13,7 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 import com.google.android.gms.oss.licenses.OssLicensesMenuActivity
 import com.konifar.moat.CommonHelper
 import com.konifar.moat.R
+import com.konifar.moat.SettingsDialogFragment
 import com.konifar.moat.ThemeConfigManager
 import com.konifar.moat.databinding.CatGreyActivityBinding
 
@@ -19,6 +21,10 @@ import com.konifar.moat.databinding.CatGreyActivityBinding
  * AppCompat theme
  */
 class CatGreyActivity : AppCompatActivity() {
+
+    companion object {
+        fun createIntent(context: Context) = Intent(context, CatGreyActivity::class.java)
+    }
 
     private lateinit var binding: CatGreyActivityBinding
 
@@ -28,6 +34,10 @@ class CatGreyActivity : AppCompatActivity() {
         binding = DataBindingUtil.setContentView(this, R.layout.cat_grey_activity)
         setSupportActionBar(binding.toolbar)
         setUpTabs()
+
+        binding.fab.setOnClickListener {
+            SettingsDialogFragment.newInstance().show(supportFragmentManager, CatGreyActivity::class.java.simpleName)
+        }
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {

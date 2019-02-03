@@ -95,4 +95,24 @@
         <item name="riv_corner_radius">@dimen/icon_radius</item>
     </style>
 
+
+    <style name="SettingRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:drawablePadding">@dimen/space_12dp</item>
+        <item name="android:padding">@dimen/space_16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="SettingFab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="android:layout_margin">@dimen/space_20dp</item>
+        <item name="android:src">@drawable/ic_build_24dp_white</item>
+    </style>
+
 </resources>

@@ -39,8 +39,6 @@
                     app:navigationIcon="@drawable/ic_cat_grey"
                     app:title="@string/appcompat_title" />
 
-                <!--<include layout="@layout/layout_bottom_sheet" />-->
-
             </com.google.android.material.appbar.CollapsingToolbarLayout>
 
             <com.google.android.material.tabs.TabLayout
@@ -59,11 +57,7 @@
 
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fab"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="end|bottom"
-            android:layout_margin="@dimen/space_20dp"
-            android:src="@drawable/ic_build_24dp_white" />
+            style="@style/SettingFab" />
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 
