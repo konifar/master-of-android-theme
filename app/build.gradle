@@ -95,7 +95,6 @@ dependencies {
     implementation Depends.Material.core
     implementation Depends.AndroidX.constraint
     implementation Depends.AndroidX.browser
-    compile 'com.android.support:design:28.0.0'
 
     implementation Depends.Material.core
 

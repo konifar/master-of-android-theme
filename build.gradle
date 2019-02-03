@@ -12,14 +12,9 @@ buildscript {
         classpath Depends.GradlePlugin.kotlin
         classpath Depends.GradlePlugin.fabric
         classpath Depends.GradlePlugin.playServices
-
-        // ライブラリのライセンスページを生成してくれるプラグイン
         classpath Depends.GradlePlugin.ossLicenses
-        // GooglePlayStoreへのアップロードをgradleで行えるようにするプラグイン
         classpath Depends.GradlePlugin.playPublisher
-        // ライブラリのアップデートが可能かチェックできるプラグイン
         classpath Depends.GradlePlugin.gradleVersions
-        // 未使用のリソースを一括削除できるプラグイン
         classpath Depends.GradlePlugin.unusedResources
     }
 }
