@@ -2,6 +2,7 @@ package com.konifar.moat
 
 import android.app.AlertDialog
 import android.app.Dialog
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.appcompat.app.AppCompatActivity
@@ -10,6 +11,7 @@ import androidx.fragment.app.DialogFragment
 import com.konifar.moat.appcompat.MoatAppCompatActivity
 import com.konifar.moat.databinding.SettingsDialogFragmentBinding
 import com.konifar.moat.materialcomponents.MoatMaterialComponentsActivity
+import com.konifar.moat.showcase.MoatShowCaseActivity
 
 class SettingsDialogFragment : DialogFragment() {
 
@@ -19,7 +21,8 @@ class SettingsDialogFragment : DialogFragment() {
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val inflater = LayoutInflater.from(context)
-        val binding: SettingsDialogFragmentBinding = DataBindingUtil.inflate(inflater, R.layout.settings_dialog_fragment, null, false)
+        val binding: SettingsDialogFragmentBinding =
+            DataBindingUtil.inflate(inflater, R.layout.settings_dialog_fragment, null, false)
 
         setUp(binding)
 
@@ -41,18 +44,22 @@ class SettingsDialogFragment : DialogFragment() {
         }
 
         binding.appcompat.setOnClickListener {
-            val intent = MoatAppCompatActivity.createIntent(context!!)
-            startActivity(intent)
-            activity?.overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-            activity?.finish()
+            showActivity(MoatAppCompatActivity.createIntent(context!!))
         }
 
         binding.materialComponent.setOnClickListener {
-            val intent = MoatMaterialComponentsActivity.createIntent(context!!)
-            startActivity(intent)
-            activity?.overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
-            activity?.finish()
+            showActivity(MoatMaterialComponentsActivity.createIntent(context!!))
         }
+
+        binding.showCase.setOnClickListener {
+            showActivity(MoatShowCaseActivity.createIntent(context!!))
+        }
+    }
+
+    private fun showActivity(intent: Intent) {
+        startActivity(intent)
+        activity?.overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
+        activity?.finish()
     }
 
 }

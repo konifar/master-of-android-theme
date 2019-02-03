@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--==================== MaterialComponents ====================-->
+    <style name="MoatMaterialTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colors -->
+        <item name="colorSurface">?attr/colorBackgroundFloating</item>
+        <item name="colorOnSurface">?android:attr/textColor</item>
+        <item name="colorPrimary">@color/orange_200</item>
+        <item name="colorPrimaryVariant">@color/orange_300</item>
+        <item name="colorPrimaryDark">@color/orange_300</item>
+        <item name="colorSecondary">@color/orange_400</item>
+        <item name="colorOnSecondary">@color/white_1000</item>
+        <item name="colorSecondaryVariant">@color/orange_500</item>
+        <item name="colorAccent">@color/amber_A700</item>
+        <item name="colorError">@color/red_500</item>
+        <item name="colorSwitchThumbNormal">@color/grey_500</item>
+        <item name="android:textColor">@color/black_1000</item>
+        <item name="android:textColorSecondary">@color/grey_900</item>
+        <item name="android:colorBackground">@color/orange_50</item>
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimary</item>
+        <!-- TextAppearances -->
+        <item name="android:itemTextAppearance">@style/Moat.TextAppearance.Widget.IconMenu.Item</item>
+        <!-- ShapeAppearances -->
+        <item name="shapeAppearanceSmallComponent">@style/Moat.ShapeAppearance.Small</item>
+        <item name="shapeAppearanceMediumComponent">@style/Moat.ShapeAppearance.Medium</item>
+        <item name="shapeAppearanceLargeComponent">@style/Moat.ShapeAppearance.Large</item>
+        <!-- Widget styles -->
+        <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>
+        <item name="actionBarStyle">@style/Moat.Widget.AppCompat.ActionBar.Solid</item>
+        <item name="chipStyle">@style/Widget.MaterialComponents.Chip.Entry</item>
+        <!-- Window configurations -->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+    <style name="Moat.ShapeAppearance.Small" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="Moat.ShapeAppearance.Medium" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Moat.ShapeAppearance.Large" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">cut</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

@@ -23,6 +23,7 @@
     <!-- Icon -->
     <dimen name="icon_48dp">48dp</dimen>
     <dimen name="icon_56dp">56dp</dimen>
+    <dimen name="icon_80dp">80dp</dimen>
     <dimen name="icon_radius">8dp</dimen>
 
 </resources>

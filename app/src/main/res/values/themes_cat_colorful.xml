@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="MoatMaterialCaseStudyTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colors -->
+        <item name="colorPrimary">@color/blue_600</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorPrimaryDark">@color/blue_700</item>
+        <item name="colorOnPrimary">@color/blue_50</item>
+
+        <item name="colorSecondary">@color/pink_400</item>
+        <item name="colorSecondaryVariant">@color/pink_500</item>
+        <item name="colorOnSecondary">@color/pink_50</item>
+
+        <item name="colorSurface">@color/yellow_700</item>
+        <item name="colorBackgroundFloating">@color/yellow_700</item>
+        <item name="colorOnSurface">@color/yellow_50</item>
+
+        <item name="colorButtonNormal">@color/amber_500</item>
+        <item name="colorControlActivated">@color/purple_500</item>
+        <item name="colorControlHighlight">@color/teal_500</item>
+        <!--<item name="colorControlNormal">@color/blue_500</item>-->
+        <!--<item name="colorSwitchThumbNormal">@color/red_500</item>-->
+        <!--<item name="controlBackground">?attr/selectableItemBackgroundBorderless</item>-->
+        <item name="android:colorBackground">@color/blue_600</item>
+
+        <!-- Text appearances -->
+        <item name="android:textAppearance">@style/TextAppearance.App</item>
+        <item name="textAppearanceHeadline6">@style/TextAppearance.App.Headline6</item>
+
+        <!-- Widget styles -->
+        <item name="actionBarStyle">@style/Widget.AppCompat.Light.ActionBar.Solid</item>
+        <item name="colorError">@color/brown_500</item>
+        <item name="actionMenuTextColor">@color/light_blue_500</item>
+        <item name="editTextColor">@color/blue_grey_500</item>
+        <item name="tooltipForegroundColor">@color/lime_500</item>
+        <item name="textColorAlertDialogListItem">@color/black_1000</item>
+        <item name="textColorSearchUrl">@color/black_1000</item>
+
+        <item name="android:colorEdgeEffect">@color/yellow_900</item>
+        <!--<item name="android:colorActivatedHighlight"></item>-->
+        <!--<item name="android:colorBackground"></item>-->
+        <!--<item name="android:colorBackgroundCacheHint"></item>-->
+        <!--<item name="android:colorFocusedHighlight"></item>-->
+        <!--<item name="android:colorForeground"></item>-->
+        <!--<item name="android:colorSecondary" tools:ignore="NewApi"></item>-->
+        <!--<item name="android:colorLongPressedHighlight"></item>-->
+
+        <!-- Text colors -->
+        <item name="android:textColor">@color/blue_grey_900</item>
+        <!-- Colors -->
+        <!--<item name="android:textColorPrimary">@color/pink_A700</item>-->
+        <item name="android:textColorPrimaryInverse">@color/pink_50</item>
+        <item name="android:textColorPrimaryDisableOnly">@color/pink_A100</item>
+        <item name="android:textColorSecondary">@color/purple_A700</item>
+        <item name="android:textColorSecondaryInverse">@color/purple_50</item>
+        <item name="android:textColorTertiary">@color/indigo_A700</item>
+        <item name="android:textColorTertiaryInverse">@color/indigo_50</item>
+        <item name="android:textColorHint">@color/light_blue_A700</item>
+        <item name="android:textColorHintInverse">@color/light_blue_50</item>
+        <item name="android:textColorHighlight">@color/yellow_A700</item>
+        <item name="android:textColorHighlightInverse">@color/yellow_50</item>
+        <item name="android:textColorLink">@color/deep_orange_A700</item>
+        <item name="android:textColorLinkInverse">@color/deep_orange_50</item>
+        <item name="android:textColorAlertDialogListItem">@color/teal_A700</item>
+        <!-- ShapeAppearances -->
+        <item name="shapeAppearanceSmallComponent">@style/Moat.ShapeAppearance.Small.Rounded</item>
+        <item name="shapeAppearanceMediumComponent">@style/Moat.ShapeAppearance.Medium.Rounded</item>
+        <item name="shapeAppearanceLargeComponent">@style/Moat.ShapeAppearance.Large.Rounded</item>
+    </style>
+
+    <style name="TextAppearance.App" parent="TextAppearance.AppCompat">
+        <item name="android:fontFamily">@font/rubik_medium</item>
+    </style>
+
+    <style name="TextAppearance.App.Headline6" parent="TextAppearance.MaterialComponents.Headline6">
+        <item name="android:fontFamily">@font/zcoolkuaile_regular</item>
+        <item name="fontFamily">@font/zcoolkuaile_regular</item>
+    </style>
+
+    <style name="Moat.ShapeAppearance.Small.Rounded" parent="ShapeAppearance.MaterialComponents.SmallComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">12dp</item>
+    </style>
+
+    <style name="Moat.ShapeAppearance.Medium.Rounded" parent="ShapeAppearance.MaterialComponents.MediumComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+    <style name="Moat.ShapeAppearance.Large.Rounded" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">16dp</item>
+    </style>
+
+</resources>

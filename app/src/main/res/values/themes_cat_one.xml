@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--==================== AppCompat ====================-->
+    <style name="MoatAppCompatTheme" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <!-- Colors -->
+        <item name="colorPrimary">@color/blue_grey_300</item>
+        <item name="colorPrimaryDark">@color/blue_grey_400</item>
+        <item name="colorSecondary">@color/blue_grey_500</item>
+        <item name="colorAccent">@color/green_A200</item>
+        <item name="colorError">@color/red_500</item>
+        <item name="colorSwitchThumbNormal">@color/grey_500</item>
+        <item name="android:textColor">@color/blue_grey_900</item>
+        <item name="android:textColorSecondary">@color/black_1000</item>
+        <item name="android:colorBackground">@color/blue_grey_50</item>
+        <item name="android:actionMenuTextColor">?android:attr/textColorPrimary</item>
+        <!-- TextAppearances -->
+        <item name="android:itemTextAppearance">@style/Moat.TextAppearance.Widget.IconMenu.Item</item>
+        <!-- Widget styles -->
+        <item name="tabStyle">@style/Moat.Widget.Design.TabLayout</item>
+        <!-- Window configurations -->
+        <item name="android:windowContentTransitions">true</item>
+    </style>
+
+</resources>

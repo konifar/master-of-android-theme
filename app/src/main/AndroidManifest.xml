@@ -39,6 +39,12 @@
             android:label="@string/material_components_title"
             android:theme="@style/MoatMaterialTheme" />
 
+        <activity
+            android:name=".showcase.MoatShowCaseActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/material_components_title"
+            android:theme="@style/MoatMaterialCaseStudyTheme" />
+
         <!-- OSS Licenses -->
         <activity
             android:name="com.google.android.gms.oss.licenses.OssLicensesActivity"
