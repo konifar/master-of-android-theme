@@ -6,9 +6,9 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import androidx.databinding.DataBindingUtil
 import androidx.fragment.app.DialogFragment
-import com.konifar.moat.appcompat.CatGreyActivity
+import com.konifar.moat.appcompat.MoatAppCompatActivity
 import com.konifar.moat.databinding.SettingsDialogFragmentBinding
-import com.konifar.moat.materialcomponents.CatBrownActivity
+import com.konifar.moat.materialcomponents.MoatMaterialComponentsActivity
 
 class SettingsDialogFragment : DialogFragment() {
 
@@ -29,14 +29,14 @@ class SettingsDialogFragment : DialogFragment() {
 
     private fun setUp(binding: SettingsDialogFragmentBinding) {
         binding.appcompat.setOnClickListener {
-            val intent = CatGreyActivity.createIntent(context!!)
+            val intent = MoatAppCompatActivity.createIntent(context!!)
             startActivity(intent)
             activity?.overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
             activity?.finish()
         }
 
         binding.materialComponent.setOnClickListener {
-            val intent = CatBrownActivity.createIntent(context!!)
+            val intent = MoatMaterialComponentsActivity.createIntent(context!!)
             startActivity(intent)
             activity?.overridePendingTransition(R.anim.fade_in, R.anim.fade_out)
             activity?.finish()

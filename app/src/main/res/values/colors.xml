@@ -3,8 +3,7 @@
 
     <color name="border_grey">@color/grey_200</color>
 
-    <color name="ripple">#1F000000</color>
-
-    <color name="cover">#8A000000</color>
+    <color name="cover_cat_one">#8A90A4AE</color>
+    <color name="cover_cat_two">#8AFFCC80</color>
 
 </resources>

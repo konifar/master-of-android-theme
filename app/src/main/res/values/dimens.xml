@@ -25,15 +25,4 @@
     <dimen name="icon_56dp">56dp</dimen>
     <dimen name="icon_radius">8dp</dimen>
 
-    <!-- Button -->
-    <dimen name="button_radius">4dp</dimen>
-    <dimen name="button_border">1dp</dimen>
-
-    <!-- Toolbar -->
-    <dimen name="toolbar_elevation">4dp</dimen>
-
-    <!-- Tab -->
-    <dimen name="tab_indicator_height">2dp</dimen>
-    <dimen name="tab_indicator_height_none">0dp</dimen>
-
 </resources>

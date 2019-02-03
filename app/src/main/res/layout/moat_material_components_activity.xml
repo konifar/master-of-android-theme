@@ -20,13 +20,13 @@
 
                     <ImageView
                         style="@style/DefaultHeaderImage"
-                        android:src="@drawable/img_cat_one"
+                        android:src="@drawable/img_cat_two"
                         tools:ignore="ContentDescription" />
 
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@color/cover" />
+                        android:background="@color/cover_cat_two" />
 
                 </FrameLayout>
 
@@ -36,8 +36,8 @@
                     android:layout_height="?attr/actionBarSize"
                     app:contentInsetStartWithNavigation="4dp"
                     app:layout_collapseMode="pin"
-                    app:navigationIcon="@drawable/ic_cat_grey"
-                    app:title="@string/appcompat_title" />
+                    app:navigationIcon="@drawable/ic_cat_brown"
+                    app:title="@string/material_components_title" />
 
             </com.google.android.material.appbar.CollapsingToolbarLayout>
 

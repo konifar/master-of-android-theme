@@ -85,17 +85,6 @@
         <item name="android:layout_width">@dimen/space_8dp</item>
     </style>
 
-    <style name="ThemeImage">
-        <item name="android:foreground">@drawable/theme_cat_foreground</item>
-        <item name="android:background">@drawable/theme_cat_background</item>
-        <item name="android:layout_width">@dimen/icon_56dp</item>
-        <item name="android:layout_height">@dimen/icon_56dp</item>
-        <item name="android:scaleType">centerCrop</item>
-        <item name="android:clickable">true</item>
-        <item name="riv_corner_radius">@dimen/icon_radius</item>
-    </style>
-
-
     <style name="SettingRow">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

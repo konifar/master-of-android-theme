@@ -5,7 +5,7 @@ import android.content.Context
 
 object ThemeConfigManager {
 
-    const val PREF_KEY_CONFIG = "pref_key_config"
+    private const val PREF_KEY_CONFIG = "pref_key_config"
 
     @SuppressLint("ApplySharedPref")
     fun saveConfig(context: Context, config: ThemeConfig) {

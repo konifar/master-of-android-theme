@@ -1,4 +1,4 @@
-package com.konifar.moat.materialcomponents
+package com.konifar.moat.appcompat
 
 import android.content.Context
 import android.content.Intent
@@ -15,29 +15,28 @@ import com.konifar.moat.CommonHelper
 import com.konifar.moat.R
 import com.konifar.moat.SettingsDialogFragment
 import com.konifar.moat.ThemeConfigManager
-import com.konifar.moat.appcompat.CatGreyActivity
-import com.konifar.moat.databinding.CatBrownActivityBinding
+import com.konifar.moat.databinding.MoatAppcompatActivityBinding
 
 /**
- * MaterialComponents theme
+ * Cat one
  */
-class CatBrownActivity : AppCompatActivity() {
+class MoatAppCompatActivity : AppCompatActivity() {
 
     companion object {
-        fun createIntent(context: Context) = Intent(context, CatBrownActivity::class.java)
+        fun createIntent(context: Context) = Intent(context, MoatAppCompatActivity::class.java)
     }
 
-    private lateinit var binding: CatBrownActivityBinding
+    private lateinit var binding: MoatAppcompatActivityBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setUpTheme()
-        binding = DataBindingUtil.setContentView(this, R.layout.cat_brown_activity)
+        binding = DataBindingUtil.setContentView(this, R.layout.moat_appcompat_activity)
         setSupportActionBar(binding.toolbar)
         setUpTabs()
 
         binding.fab.setOnClickListener {
-            SettingsDialogFragment.newInstance().show(supportFragmentManager, CatGreyActivity::class.java.simpleName)
+            SettingsDialogFragment.newInstance().show(supportFragmentManager, MoatAppCompatActivity::class.java.simpleName)
         }
     }
 
@@ -86,16 +85,16 @@ class CatBrownActivity : AppCompatActivity() {
         sealed class Tab(@StringRes val titleResId: Int) {
             abstract val fragment: Fragment
 
-            class ButtonsAndTexts : Tab(R.string.buttons_and_texts_title) {
-                override val fragment = MaterialComponentsButtonAndTextsFragment.newInstance()
+            class ButtonsAndTexts : Tab(R.string.texts_title) {
+                override val fragment = AppCompatButtonAndTextsFragment.newInstance()
             }
 
             class Components : Tab(R.string.components_title) {
-                override val fragment = MaterialComponentsComponentsFragment.newInstance()
+                override val fragment = AppCompatComponentsFragment.newInstance()
             }
 
             class Colors : Tab(R.string.colors_title) {
-                override val fragment = MaterialComponentsColorsFragment.newInstance()
+                override val fragment = AppCompatColorsFragment.newInstance()
             }
         }
 

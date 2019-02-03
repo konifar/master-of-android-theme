@@ -21,7 +21,7 @@
             android:value="bf32c2493f419cd7bf8292115f51af3c111e39f1" />
 
         <activity
-            android:name=".appcompat.CatGreyActivity"
+            android:name=".appcompat.MoatAppCompatActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/appcompat_title">
             <intent-filter>
@@ -34,7 +34,7 @@
         </activity>
 
         <activity
-            android:name=".materialcomponents.CatBrownActivity"
+            android:name=".materialcomponents.MoatMaterialComponentsActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/material_components_title"
             android:theme="@style/MoatMaterialTheme.CatTwo" />
