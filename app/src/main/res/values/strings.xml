@@ -5,6 +5,10 @@
     <string name="appcompat_title">AppCompat</string>
     <string name="material_components_title">Material Components</string>
 
+    <string name="colors_title">Colors</string>
+    <string name="buttons_and_texts_title">Buttons and Texts</string>
+    <string name="components_title">Components</string>
+
     <string name="colors">Colors</string>
     <string name="buttons">Buttons</string>
     <string name="texts">Texts</string>
