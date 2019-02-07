@@ -1,10 +1,12 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="HardcodedText">
 
-    <ScrollView
+    <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -13,18 +15,10 @@
             android:orientation="vertical"
             android:padding="@dimen/space_16dp">
 
-            <!--==================== Colors ====================-->
-            <TextView
-                style="@style/Title"
-                android:layout_marginTop="0dp"
-                android:text="@string/colors" />
-
-            <include layout="@layout/layout_material_components_colors" />
-
-
             <!--==================== Buttons ====================-->
             <TextView
                 style="@style/Title"
+                android:layout_marginTop="0dp"
                 android:text="@string/buttons" />
 
             <include layout="@layout/layout_material_components_buttons" />
@@ -46,28 +40,8 @@
             <include
                 android:id="@+id/forms"
                 layout="@layout/layout_material_components_forms" />
-
-
-            <!--==================== Actions ====================-->
-            <TextView
-                style="@style/Title"
-                android:text="@string/actions" />
-
-            <include
-                android:id="@+id/actions"
-                layout="@layout/layout_material_components_actions" />
-
-
-            <!--==================== Components ====================-->
-            <TextView
-                style="@style/Title"
-                android:text="@string/components" />
-
-            <include
-                android:id="@+id/components"
-                layout="@layout/layout_material_components_components" />
         </LinearLayout>
 
-    </ScrollView>
+    </androidx.core.widget.NestedScrollView>
 
 </layout>

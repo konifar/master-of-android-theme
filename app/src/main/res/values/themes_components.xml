@@ -11,19 +11,8 @@
         <item name="elevation">0dp</item>
     </style>
 
-    <style name="Moat.Widget.MaterialComponents.CardView" parent="Widget.MaterialComponents.CardView">
-        <item name="shapeAppearance">@style/Moat.ShapeAppearance.Shrine.LargeComponent</item>
-    </style>
-
-    <style name="Moat.ShapeAppearance.Shrine.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
-        <item name="cornerFamily">cut</item>
-        <item name="cornerSize">20dp</item>
-    </style>
-
     <style name="Moat.TextAppearance.Widget.IconMenu.Item" parent="@android:style/TextAppearance.Widget.IconMenu.Item">
         <item name="android:textColor">?android:attr/textColorPrimary</item>
     </style>
-
-    <item name="disabled_alpha" format="float" type="dimen">1.0</item>
 
 </resources>

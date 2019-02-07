@@ -1,6 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?><!-- Specific styles for app -->
 <resources>
 
+    <style name="DefaultCollapsingToolbarLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/brand_image_height</item>
+        <item name="contentScrim">?attr/colorPrimary</item>
+        <item name="layout_scrollFlags">scroll|exitUntilCollapsed|snap</item>
+    </style>
+
+    <style name="DefaultHeaderImageWrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="layout_collapseMode">parallax</item>
+    </style>
+
+    <style name="DefaultHeaderImage">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
     <style name="Title">
         <item name="android:textAppearance">@style/TextAppearance.AppCompat.Headline</item>
         <item name="android:layout_height">wrap_content</item>
@@ -66,14 +85,23 @@
         <item name="android:layout_width">@dimen/space_8dp</item>
     </style>
 
-    <style name="ThemeImage">
-        <item name="android:foreground">@drawable/theme_cat_foreground</item>
-        <item name="android:background">@drawable/theme_cat_background</item>
-        <item name="android:layout_width">@dimen/icon_56dp</item>
-        <item name="android:layout_height">@dimen/icon_56dp</item>
-        <item name="android:scaleType">centerCrop</item>
+    <style name="SettingRow">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat.Title</item>
+        <item name="android:drawablePadding">@dimen/space_12dp</item>
+        <item name="android:padding">@dimen/space_16dp</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
         <item name="android:clickable">true</item>
-        <item name="riv_corner_radius">@dimen/icon_radius</item>
+    </style>
+
+    <style name="SettingFab">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="android:layout_margin">@dimen/space_20dp</item>
+        <item name="android:src">@drawable/ic_build_24dp_white</item>
     </style>
 
 </resources>

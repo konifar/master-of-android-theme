@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Switch
+            android:id="@+id/dark_mode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="@dimen/space_16dp"
+            android:switchPadding="@dimen/space_12dp"
+            android:text="@string/dark_mode"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title" />
+
+        <TextView
+            android:id="@+id/appcompat"
+            style="@style/SettingRow"
+            android:drawableStart="@drawable/ic_cat_grey"
+            android:text="@string/appcompat_title" />
+
+        <View style="@style/Border" />
+
+        <TextView
+            android:id="@+id/material_component"
+            style="@style/SettingRow"
+            android:drawableStart="@drawable/ic_cat_brown"
+            android:text="@string/material_components_title" />
+
+        <View style="@style/Border" />
+
+        <TextView
+            android:id="@+id/show_case"
+            style="@style/SettingRow"
+            android:drawableStart="@drawable/ic_cat_colorful"
+            android:text="@string/show_case_title" />
+
+    </LinearLayout>
+
+</layout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- cat one -->
+    <color name="cat_one_text_color">@color/blue_grey_50</color>
+    <color name="cat_one_background">@color/blue_grey_800</color>
+
+</resources>
