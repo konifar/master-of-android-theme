@@ -7,7 +7,7 @@ This app is the example app for [DroidKaigi 2019 session](https://droidkaigi.jp/
 # Features
 AppCompat(Night) | MaterialComponents | OverView
 :--: | :--: | :--:
-<img src="art/cat_one_dark.jpg" width="300" /> | <img src="art/cat_two_light.jpg" width="350" /> | <img src="art/cat_screen.gif" width="300" />
+<img src="art/cat_one_dark.jpg" width="300" /> | <img src="art/cat_two_light.jpg" width="300" /> | <img src="art/cat_screen.gif" width="300" />
 
 - The show cases which are applied AppCompat and MaterialComponents theme.
 - Each page supports DayNight mode.
