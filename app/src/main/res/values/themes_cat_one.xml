@@ -10,9 +10,9 @@
         <item name="colorAccent">@color/green_A200</item>
         <item name="colorError">@color/red_500</item>
         <item name="colorSwitchThumbNormal">@color/grey_500</item>
-        <item name="android:textColor">@color/blue_grey_900</item>
+        <item name="android:textColor">@color/cat_one_text_color</item>
         <item name="android:textColorSecondary">@color/black_1000</item>
-        <item name="android:colorBackground">@color/blue_grey_50</item>
+        <item name="android:colorBackground">@color/cat_one_background</item>
         <item name="android:actionMenuTextColor">?android:attr/textColorPrimary</item>
         <!-- TextAppearances -->
         <item name="android:itemTextAppearance">@style/Moat.TextAppearance.Widget.IconMenu.Item</item>

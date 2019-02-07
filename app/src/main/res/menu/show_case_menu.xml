@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/menu_github"
+        android:icon="@drawable/ic_github_24dp"
+        android:title="GitHub Repository"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/menu_oss"
+        android:icon="@drawable/ic_android_24dp"
+        android:title="OSS Licenses"
+        tools:ignore="HardcodedText" />
+
+    <item
+        android:id="@+id/toggle_theme"
+        android:icon="@drawable/ic_cached_24dp"
+        android:title="Toggle theme"
+        tools:ignore="HardcodedText" />
+</menu>

@@ -5,5 +5,10 @@
 
     <color name="cover_cat_one">#8A90A4AE</color>
     <color name="cover_cat_two">#8AFFCC80</color>
+    <color name="cover_cat_colorful">#8A1E88E5</color>
+
+    <!-- cat one -->
+    <color name="cat_one_text_color">@color/blue_grey_900</color>
+    <color name="cat_one_background">@color/blue_grey_50</color>
 
 </resources>

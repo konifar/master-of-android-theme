@@ -2,7 +2,6 @@ package com.konifar.moat
 
 import android.content.Context
 import android.net.Uri
-import android.os.Handler
 import androidx.appcompat.app.AppCompatActivity
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.browser.customtabs.CustomTabsIntent
@@ -15,10 +14,16 @@ object CommonHelper {
         showBrowser(context, REPOSITORY_URL)
     }
 
-    fun changeDarkMode(activity: AppCompatActivity, darkMode: Boolean) {
-        Handler().postDelayed({
-            activity.delegate.setLocalNightMode(if (darkMode) AppCompatDelegate.MODE_NIGHT_YES else AppCompatDelegate.MODE_NIGHT_NO)
-        }, 200)
+    fun changeDarkMode(activity: AppCompatActivity, isNightMode: Boolean) {
+//        Handler().postDelayed({
+        val mode = if (isNightMode) {
+            AppCompatDelegate.MODE_NIGHT_YES
+        } else {
+            AppCompatDelegate.MODE_NIGHT_NO
+        }
+        activity.delegate.setLocalNightMode(mode)
+        // Change mode immediately
+//        }, 200)
     }
 
     private fun showBrowser(context: Context, url: String) {

@@ -43,7 +43,7 @@
             android:name=".showcase.MoatShowCaseActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/material_components_title"
-            android:theme="@style/MoatMaterialCaseStudyTheme" />
+            android:theme="@style/MoatVividCaseStudyTheme" />
 
         <!-- OSS Licenses -->
         <activity
