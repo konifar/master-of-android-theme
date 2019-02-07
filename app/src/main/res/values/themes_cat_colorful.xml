@@ -49,10 +49,6 @@
         <item name="shapeAppearanceSmallComponent">@style/Moat.ShapeAppearance.Small.Rounded</item>
         <item name="shapeAppearanceMediumComponent">@style/Moat.ShapeAppearance.Medium.Rounded</item>
         <item name="shapeAppearanceLargeComponent">@style/Moat.ShapeAppearance.Large.Rounded</item>
-        <item name="chipStyle"></item>
-        <item name="materialCardViewStyle"></item>
-        <item name="buttonStyle"></item>
-        <item name="floatingActionButtonStyle"></item>
     </style>
 
     <style name="TextAppearance.App" parent="TextAppearance.AppCompat">
